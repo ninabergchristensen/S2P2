@@ -1,7 +1,14 @@
-function accordion(){
+function accordion(value,id){
 	// her skal skrives en function, der får accordions til at expand/collapse
-	alert("Boo");
-	//var accordionThis = document.getElementById(value).parentElement;
+	var buttonDisplay = id;
+	var accordionThis = value;
 	//alert(accordionThis);
-	//console.log(accordionThis);
+	//alert(buttonDisplay);
+	if (document.getElementById(buttonDisplay).innerHTML == "+") {
+		document.getElementById(buttonDisplay).innerHTML = "&minus;";
+		document.getElementById(accordionThis).style.display = "block";
+	} else {
+		document.getElementById(buttonDisplay).innerHTML = "&plus;"
+		document.getElementById(accordionThis).style.display = "none";
+	}
 }

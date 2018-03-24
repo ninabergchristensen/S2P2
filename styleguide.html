@@ -25,45 +25,55 @@
 
 	<main>
 
-		<section id="general">
-			<h2>General</h2>
-			<h3>Colors</h3>
-			<h4>Primary</h4>
-			<h4>Secondary</h4>
-			<h3>Typography</h3>
-			<h4>Headers</h4>
-			<h4>Copy</h4>
-			
-		</section>
+		<div>
 
-		<section id="elements">
-			<h2>Elements</h2>
+			<section id="general">
+				<h2>General</h2>
+				<h3>Colors</h3>
+				<h4>Primary</h4>
+				<h4>Secondary</h4>
+				<h3>Typography</h3>
+				<h4>Headers</h4>
+				<h4>Copy</h4>
+				
+			</section>
+
+			<section id="elements">
+				<h2>Elements</h2>
+				<ul>
+					<li>
+						<h3>Buttons</h3>
+						<button type="button" value="acc-buttons" id="btn-buttons" onclick="accordion(value,id)">&plus;</button>
+						<div id="acc-buttons" style="display: none;">
+							<p>Alt dette skal skjules og vises med javascript.</p>
+							<code>Example code</code>
+							<code>Example styles</code>
+						</div>
+					</li>
+					<li>
+						<h3>Forms</h3>
+					</li>
+				</ul>
+				
+			</section>
+
+			<section id="sections">
+				<h2>Sections</h2>
+				<p></p>
+			</section>
+
+		</div>
+
+		<aside>
+			<h2>Sidebar</h2>
 			<ul>
-				<li>
-					<h3>Buttons</h3>
-					<button type="button" value="1" onclick="accordion()">&plus;</button>
-					<div style="">
-						<code>Example code</code>
-						<code>Example styles</code>
-					</div>
-				</li>
-				<li>
-					<h3>Forms</h3>
-				</li>
-			</ul>
-			
-		</section>
-
-		<section id="sections">
-			<h2>Sections</h2>
-			<p></p>
-		</section>
+			<li><a href="#general">General</a></li>
+			<li><a href="#elements">Elements</a></li>
+			<li><a href="#sections">Sections</a></li>
+		</ul>
+		</aside>
 
 	</main>
-
-	<aside>
-		<p>Sidebar</p>
-	</aside>
 
 <script src="assets/script.js"></script>
 </body>
