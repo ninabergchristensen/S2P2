@@ -12,9 +12,13 @@ body {
 	margin: 0 auto;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 li {
 	list-style: none;
-	margin: 0;
 }
 
 /*-------------------------
@@ -24,21 +28,24 @@ li {
 header {
 	width: 100%;
 	background: #eee;
+	padding: 40px 0;
+	margin: 15px auto;
 }
 
 header div {
 	width: 960px;
 	margin: 30px auto;
-	border: 1px solid #aaa; /* midlertidig */
+	background: #eee; /* midlertidig */
+	text-align: center;
 }
 
 main {
 	width: 960px;
 	max-width: 100%;
 	margin: 0px auto;
-	border: 1px solid #ccc; /* midlertidig */
+	background: #bbb; /* midlertidig */
 	display: flex;
-	flex-wrap: nowrap;
+	flex-flow: row wrap;
 }
 
 main div {
@@ -47,14 +54,69 @@ main div {
 
 section {
 	width: 100%;
-	border: 1px solid #ccc; /* midlertidig */
+	background: #eee; /* midlertidig */
 	margin-bottom: 50px;
+	padding: 15px;
 }
 
+section div {
+	width: 100%;
+	background: #ddd; /* midlertidig */
+}
+
+/*-------------------------
+ Sidebar 
+ ------------------------*/
+
 aside {
-	flex-grow: 1;
-	border: 1px solid #ccc; /* midlertidig */
+	width: 250px;
+	max-width: 100%;
+	background: #ccc; /* midlertidig */
 	height: 100%;
+	padding-left: 15px;
+}
+
+/*-------------------------
+ Nav 
+ ------------------------*/
+
+nav {
+	background: #ccc;
+	width: 100%;
+}
+
+nav ul {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*-------------------------
+ Flex layouts 
+ ------------------------*/
+
+.flexcontainer {
+	width: 100%;
+	background: tomato;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	align-content: stretch;
+	padding: 0px -15px;
+}
+
+.flexcontainer>div {
+	padding: 0px 15px;
+	flex-grow: 1;
+	flex-basis: 25%;
+}
+
+/*-------------------------
+ Article / feed 
+ ------------------------*/
+
+.articleimg {
+	min-height: 200px;
+	width: 100%;
 }
 
 /*-------------------------
@@ -67,18 +129,8 @@ h1, h2, h3, h4 ,h5, h6 {
 
 h1 {
 	font-family: 'Cabin Sketch', cursive;
-	font-size: 42px;
+	font-size: 54px;
 }
-
-/*-------------------------
- Nav 
- ------------------------*/
-
-nav {
-	background: #ccc;
-	width: 100%;
-}
-
 
 /*-------------------------
  Style Guide page styles 

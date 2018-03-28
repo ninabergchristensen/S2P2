@@ -10,15 +10,13 @@
 
 	<nav>
 		<ul>
-			<li><a href="#general">General</a></li>
-			<li><a href="#elements">Elements</a></li>
-			<li><a href="#sections">Sections</a></li>
+			<li><a href="#">Nav? Ved ikke om det er n&oslash;dvendigt.</a></li>
 		</ul>
 	</nav>
 
 	<header>
 		<div>
-			<h1>KEDU Style Guide</h1>
+			<h1>Style Guide</h1>
 			<p>This style guide describes how to code and style web elements and sections for the KEDU community platform by KUBO Robotics.</p>
 		</div>
 	</header>
@@ -29,12 +27,62 @@
 
 			<section id="general">
 				<h2>General</h2>
-				<h3>Colors</h3>
-				<h4>Primary</h4>
-				<h4>Secondary</h4>
-				<h3>Typography</h3>
-				<h4>Headers</h4>
-				<h4>Copy</h4>
+				<ul>
+					<li>
+						<h3>Colors</h3>
+						<h4>Primary</h4>
+						<div style="width: 100%; height: 40px; background: tomato;">Testbox</div>
+						<div class="flexcontainer">
+							<div>
+								<div class="articleimg" style="background: #aaa;"></div>
+								<h2>Color &hash; One</h2>
+								<p>Blah blah</p>
+							</div>
+							<div>
+								<div class="articleimg" style="background: #bbb;"></div>
+								<h2>Color &hash; Two</h2>
+								<p>Blah blah</p>
+							</div>
+							<div>
+								<div class="articleimg" style="background: #ccc;"></div>
+								<h2>Color &hash; Three</h2>
+								<p>Blah blah</p>
+							</div>
+						</div>
+						<button type="button" value="acc-colorsprimary" id="btn-colorsprimary" onclick="accordion(value,id)">Show code</button>
+						<div id="acc-colorsprimary" style="display: none;">
+							<p>Alt dette skal skjules og vises med javascript.</p>
+							<code>Example code</code>
+							<code>Example styles</code>
+						</div>
+						<h4>Secondary</h4>
+						<button type="button" value="acc-colorssecondary" id="btn-colorssecondary" onclick="accordion(value,id)">Show code</button>
+						<div id="acc-colorssecondary" style="display: none;">
+							<p>Alt dette skal skjules og vises med javascript.</p>
+							<code>Example code</code>
+							<code>Example styles</code>
+						</div>
+					</li>
+					<li>
+						<h3>Typography</h3>
+						<h4>Headers</h4>
+						<h1>Header 1 H1</h1>
+						<h2>Header 2 H2</h2>
+						<button type="button" value="acc-typeheaders" id="btn-typeheaders" onclick="accordion(value,id)">Show code</button>
+						<div id="acc-typeheaders" style="display: none;">
+							<p>Alt dette skal skjules og vises med javascript.</p>
+							<code>Example code</code>
+							<code>Example styles</code>
+						</div>
+						<h4>Copy</h4>
+						<button type="button" value="acc-typecopy" id="btn-typecopy" onclick="accordion(value,id)">Show code</button>
+						<div id="acc-typecopy" style="display: none;">
+							<p>Alt dette skal skjules og vises med javascript.</p>
+							<code>Example code</code>
+							<code>Example styles</code>
+						</div>
+					</li>
+				</ul>
 				
 			</section>
 
@@ -43,7 +91,7 @@
 				<ul>
 					<li>
 						<h3>Buttons</h3>
-						<button type="button" value="acc-buttons" id="btn-buttons" onclick="accordion(value,id)">&plus;</button>
+						<button type="button" value="acc-buttons" id="btn-buttons" onclick="accordion(value,id)">Show code</button>
 						<div id="acc-buttons" style="display: none;">
 							<p>Alt dette skal skjules og vises med javascript.</p>
 							<code>Example code</code>
@@ -57,8 +105,8 @@
 				
 			</section>
 
-			<section id="sections">
-				<h2>Sections</h2>
+			<section id="layouts">
+				<h2>Layouts</h2>
 				<p></p>
 			</section>
 
@@ -69,7 +117,7 @@
 			<ul>
 			<li><a href="#general">General</a></li>
 			<li><a href="#elements">Elements</a></li>
-			<li><a href="#sections">Sections</a></li>
+			<li><a href="#layouts">Layouts</a></li>
 		</ul>
 		</aside>
 

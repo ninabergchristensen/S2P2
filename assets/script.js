@@ -4,11 +4,11 @@ function accordion(value,id){
 	var accordionThis = value;
 	//alert(accordionThis);
 	//alert(buttonDisplay);
-	if (document.getElementById(buttonDisplay).innerHTML == "+") {
-		document.getElementById(buttonDisplay).innerHTML = "&minus;";
+	if (document.getElementById(buttonDisplay).innerHTML == "Show code") {
+		document.getElementById(buttonDisplay).innerHTML = "Hide code";
 		document.getElementById(accordionThis).style.display = "block";
 	} else {
-		document.getElementById(buttonDisplay).innerHTML = "&plus;"
+		document.getElementById(buttonDisplay).innerHTML = "Show code"
 		document.getElementById(accordionThis).style.display = "none";
 	}
 }
