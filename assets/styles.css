@@ -40,19 +40,19 @@ a {
 	color: #303133;
 }
 
-button {
+button.accButton {
 	background-color: #268dbd;
 	border: 1px solid #268dbd;
 	border-radius: 4px;
 	color: #f1f1f2;
 }
 
-button:hover {
-	cursor: pointer;
+button.accButtonOpen {
+	background: #db3d2e;
 }
 
-button:valid {
-		color: red;
+button:hover {
+	cursor: pointer;
 }
 
 .colorWhite {
