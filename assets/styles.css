@@ -49,7 +49,7 @@ button.accButton, button.accButtonOpen {
 	color: #f1f1f2;
 }
 
-button.accButtonOpen {
+button.accButtonOpen, button.accButtonOpen:focus {
 	background: #db3d2e;
 	border: 1px solid #db3d2e;
 }
