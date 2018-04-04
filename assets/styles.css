@@ -52,6 +52,7 @@ header div {
 	background: #268dbd;
 	text-align: center;
 	color: #f1f1f2;
+	max-width: 100%;
 }
 
 main {
