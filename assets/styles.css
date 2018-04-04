@@ -41,7 +41,7 @@ li {
 
 header {
 	width: 100%;
-	background: #eee;
+	background: #268dbd;
 	padding: 40px 0;
 	margin: 15px auto;
 }
@@ -49,8 +49,9 @@ header {
 header div {
 	width: 960px;
 	margin: 30px auto;
-	background: #eee; /* midlertidig */
+	background: #268dbd;
 	text-align: center;
+	color: #f1f1f2;
 }
 
 main {
@@ -156,7 +157,4 @@ body#styleguide {
 }
 
 #general, #elements, #layouts {
-	width: 960px;
-	margin: auto;
-	background-color: red;
 }
