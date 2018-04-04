@@ -41,6 +41,7 @@ a {
 }
 
 button.accButton {
+	width: 80px;
 	background-color: #268dbd;
 	border: 1px solid #268dbd;
 	border-radius: 4px;
