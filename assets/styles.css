@@ -147,7 +147,6 @@ nav ul {
 
 .flexcontainer {
 	width: 100%;
-	background: tomato;
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
