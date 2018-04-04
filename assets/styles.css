@@ -35,6 +35,38 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	color: #303133;
+}
+
+button {
+	background-color: #268dbd;
+	border: 1px solid #268dbd;
+	border-radius: 4px;
+	color: #f1f1f2;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:valid {
+		color: red;
+}
+
+.colorWhite {
+	color: #f1f1f2;
+}
+
+.colorBlue1 {
+	color: ##268dbd;
+}
+
+.colorBlue2 {
+	color: #226390;
+}
+
 /*-------------------------
  Layout
  ------------------------*/
@@ -59,7 +91,7 @@ main {
 	width: 960px;
 	max-width: 100%;
 	margin: 0px auto;
-	background: #bbb; /* midlertidig */
+	background: #268dbd;
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -75,6 +107,7 @@ section {
 	padding: 15px;
 }
 
+
 section div {
 	width: 100%;
 	background: #ddd; /* midlertidig */
@@ -87,9 +120,10 @@ section div {
 aside {
 	width: 250px;
 	max-width: 100%;
-	background: #ccc; /* midlertidig */
+	background: #226390; /* midlertidig */
 	height: 100%;
 	padding-left: 15px;
+	color: #f1f1f2;
 }
 
 /*-------------------------
@@ -97,7 +131,7 @@ aside {
  ------------------------*/
 
 nav {
-	background: #ccc;
+	background: #226390;
 	width: 100%;
 }
 
@@ -156,6 +190,36 @@ h1 {
 body#styleguide {
 	font-family: 'Lato', sans-serif;
  	font-weight: 400;
+}
+
+#fixednav {
+	position: fixed;
+}
+
+.sidebar {
+	color: #f1f1f2;
+	-webkit-transition: color 0.1s, padding 0.1s;
+}
+
+.sidebar:hover {
+	padding-left: 5px;
+	color: #ffffff;
+}
+
+.sidebarHeader {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+.sidebarSubheader {
+	display: block;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+#layouts {
+	height: 100vh;
 }
 
 #general, #elements, #layouts {
