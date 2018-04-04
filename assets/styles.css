@@ -40,6 +40,10 @@ a {
 	color: #303133;
 }
 
+.accBox, .articleimg {
+	border-radius: 4px;
+}
+
 button.accButton, button.accButtonOpen {
 	width: 100px;
 	padding: 5px;
@@ -49,7 +53,7 @@ button.accButton, button.accButtonOpen {
 	color: #f1f1f2;
 }
 
-button.accButtonOpen, button.accButtonOpen:focus {
+button.accButtonOpen {
 	background: #db3d2e;
 	border: 1px solid #db3d2e;
 }
@@ -99,7 +103,7 @@ main {
 	width: 960px;
 	max-width: 100%;
 	margin: 0px auto;
-	background: #268dbd;
+	/*background: #268dbd;*/
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -110,7 +114,7 @@ main div {
 
 section {
 	width: 100%;
-	background: #eee; /* midlertidig */
+	/*background: #eee;  midlertidig */
 	margin-bottom: 50px;
 	padding: 15px;
 }
@@ -118,7 +122,7 @@ section {
 
 section div {
 	width: 100%;
-	background: #ddd; /* midlertidig */
+	/*background: #ddd;  midlertidig */
 }
 
 /*-------------------------
@@ -128,8 +132,7 @@ section div {
 aside {
 	width: 250px;
 	max-width: 100%;
-	background: #226390; /* midlertidig */
-	height: 100%;
+	background: #268dbd;
 	padding-left: 15px;
 	color: #f1f1f2;
 }
@@ -194,40 +197,29 @@ h1 {
  Style Guide page styles
  ------------------------*/
 
-body#styleguide {
+#styleguide {
 	font-family: 'Lato', sans-serif;
  	font-weight: 400;
 }
 
-#fixednav {
+#styleguide aside>div {
 	position: fixed;
 }
 
-.sidebar {
+#styleguide ul {
+	margin-bottom: 20px;
+}
+
+#styleguide ul li a {
 	color: #f1f1f2;
 	-webkit-transition: color 0.1s, padding 0.1s;
 }
 
-.sidebar:hover {
+#styleguide ul li a:hover {
 	padding-left: 5px;
 	color: #ffffff;
 }
 
-.sidebarHeader {
-	display: block;
-	margin-top: 10px;
-	font-size: 1.2em;
-}
-
-.sidebarSubheader {
-	display: block;
-	margin-top: 2px;
-	margin-left: 10px;
-}
-
-#layouts {
-	height: 100vh;
-}
-
-#general, #elements, #layouts {
+#styleguide ul li:first-child a {
+	font-size: 24px;
 }
