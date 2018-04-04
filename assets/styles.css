@@ -40,9 +40,10 @@ a {
 	color: #303133;
 }
 
-button.accButton {
-	width: 80px;
-	background-color: #268dbd;
+button.accButton, button.accButtonOpen {
+	width: 100px;
+	padding: 5px;
+	background: #268dbd;
 	border: 1px solid #268dbd;
 	border-radius: 4px;
 	color: #f1f1f2;
@@ -50,10 +51,16 @@ button.accButton {
 
 button.accButtonOpen {
 	background: #db3d2e;
+	border: 1px solid #db3d2e;
 }
 
 button:hover {
 	cursor: pointer;
+}
+
+.accBox {
+	padding: 10px 10px 20px;
+	margin: 10px 0px 20px;
 }
 
 .colorWhite {
