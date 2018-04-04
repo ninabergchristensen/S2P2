@@ -64,9 +64,9 @@ main {
 	flex-flow: row wrap;
 }
 
-main div {
+/*main div {
 	flex-grow: 3;
-}
+}*/
 
 section {
 	width: 100%;
