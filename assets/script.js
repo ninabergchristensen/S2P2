@@ -6,9 +6,11 @@ function accordion(value,id){
 	//alert(buttonDisplay);
 	if (document.getElementById(buttonDisplay).innerHTML == "Show code") {
 		document.getElementById(buttonDisplay).innerHTML = "Hide code";
+		document.getElementById(buttonDisplay).className = "accButtonOpen";
 		document.getElementById(accordionThis).style.display = "block";
 	} else {
-		document.getElementById(buttonDisplay).innerHTML = "Show code"
+		document.getElementById(buttonDisplay).innerHTML = "Show code";
+		document.getElementById(buttonDisplay).className = "accButton";
 		document.getElementById(accordionThis).style.display = "none";
 	}
 }
