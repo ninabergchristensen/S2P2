@@ -68,6 +68,7 @@ button.accButton:focus, button.accButtonOpen:focus {
 .accBox {
 	padding: 10px 10px 20px;
 	margin: 10px 0px 20px;
+	background: #eee;
 }
 
 .colorWhite {
@@ -179,7 +180,7 @@ nav ul {
  ------------------------*/
 
 .articleimg {
-	min-height: 200px;
+	min-height: 150px;
 	width: 100%;
 }
 
@@ -224,5 +225,6 @@ h1 {
 }
 
 #styleguide ul li:first-child a {
+	font-weight: 700;
 	font-size: 24px;
 }
