@@ -6,7 +6,7 @@ Farver
 		Hvid = #f1f1f2
 		Grøn = #6ebe56
 		Sort = #303133
-	Sekundær
+	Sekundære
 		Rød = #db3d2e
 		Orange = #fb8c3e
 		Turkis #00a39b
@@ -144,6 +144,36 @@ aside {
 /*-------------------------
  Nav
  ------------------------*/
+
+.topnav {
+	width: 100%;
+	height: 75px;
+	background-color: #268dbd;
+	position: fixed;
+	top: 0;
+	text-align: center;
+	z-index: 10000;
+}
+
+.topnav ul {
+	margin-top: 20px;
+	display: inline-block;
+	text-align: initial;
+}
+
+.topnav ul li {
+	display: inline;
+	padding: 2em;
+}
+
+.topnav ul li a {
+	color: #f1f1f2;
+	font-size: 30px;
+}
+
+.topnav ul li a:hover {
+	color: white;
+}
 
 nav {
 	background: #226390;
