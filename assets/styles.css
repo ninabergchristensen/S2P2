@@ -95,7 +95,7 @@ header {
 }
 
 header div {
-	width: 960px;
+	width: 1366px;
 	margin: 30px auto;
 	text-align: center;
 	color: #f1f1f2;
@@ -105,6 +105,7 @@ header div {
 header#header {
 	padding: 1px;
 	margin-top: 1px;
+		margin: 10px auto;
 }
 
 header div#header {
@@ -113,6 +114,15 @@ header div#header {
 }
 
 main {
+	width: 1366px;
+	max-width: 100%;
+	margin: 0px auto;
+	/*background: #268dbd;*/
+	display: flex;
+	flex-flow: row wrap;
+}
+
+main#styleguide {
 	width: 960px;
 	max-width: 100%;
 	margin: 0px auto;
@@ -147,7 +157,17 @@ aside {
 	max-width: 100%;
 	background: #268dbd;
 	padding-left: 15px;
+	padding-right: 15px;
 	color: #f1f1f2;
+}
+
+aside h2 {
+	font-weight: 400;
+	text-align: center;
+}
+
+aside h3 {
+	font-weight: 400;
 }
 
 div.heighttest { /* Midlertidig, skal aflives senere */
@@ -165,7 +185,7 @@ div.heighttest { /* Midlertidig, skal aflives senere */
 	position: fixed;
 	top: 0;
 	text-align: center;
-	box-shadow: 0 1px 7px black;
+	box-shadow: 0 0.1px 7px #262626;
 	z-index: 10000;
 }
 
@@ -238,6 +258,37 @@ nav ul {
 .articleimg {
 	min-height: 150px;
 	width: 100%;
+}
+
+.articleimgDashboard {
+	min-height: 200px;
+	background-image: url('img/environment1.jpg');
+	opacity: 0.7;
+	background-size: cover;
+	-webkit-transition: opacity 0.1s;
+}
+
+.articleimgDashboard:hover {
+	opacity: 1;
+}
+
+.articleimgHeader {
+	width: 100%;
+	min-height: 30px;
+	background: #268dbd;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	padding: 3px;
+}
+
+.articleimgHeader p {
+	color: #f1f1f2;
+	margin: 0;
+	margin-left: 10px;
+}
+
+div.divider {
+	height: 35px;
 }
 
 /*-------------------------
