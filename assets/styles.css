@@ -23,7 +23,7 @@ html {
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	margin: 0 auto;
+	margin: 55px auto 0px;
 }
 
 ul {
@@ -90,7 +90,9 @@ button.accButton:focus, button.accButtonOpen:focus {
 header {
 	width: 100%;
 	background: #268dbd;
-	padding: 40px 0;
+	background: url('img/environment1.jpg') center;
+	background-size: cover;
+	padding: 30px 0;
 	margin: 15px auto;
 }
 
@@ -102,14 +104,9 @@ header div {
 	max-width: 100%;
 }
 
-header#header {
-	padding: 1px;
-	margin-top: 1px;
-		margin: 10px auto;
-}
-
-header div#header {
+header>div {
 	position: relative;
+	padding: 15px;
 	top: 25px;
 }
 
@@ -117,35 +114,23 @@ main {
 	width: 1366px;
 	max-width: 100%;
 	margin: 0px auto;
-	/*background: #268dbd;*/
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 }
 
-main#styleguide {
-	width: 960px;
-	max-width: 100%;
-	margin: 0px auto;
-	/*background: #268dbd;*/
-	display: flex;
-	flex-flow: row wrap;
-}
-
-main div {
+main>div {
 	flex-grow: 3;
+	margin-top: 20px;
 }
 
 section {
 	width: 100%;
-	/*background: #eee;  midlertidig */
 	margin-bottom: 50px;
 	padding: 15px;
 }
 
-
 section div {
 	width: 100%;
-	/*background: #ddd;  midlertidig */
 }
 
 /*-------------------------
@@ -156,8 +141,7 @@ aside {
 	width: 250px;
 	max-width: 100%;
 	background: #268dbd;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 15px 15px;
 	color: #f1f1f2;
 }
 
@@ -178,9 +162,9 @@ div.heighttest { /* Midlertidig, skal aflives senere */
  Nav
  ------------------------*/
 
-.topnav {
+nav {
 	width: 100%;
-	height: 50px;
+	height: 55px;
 	background-color: #f1f1f2;
 	position: fixed;
 	top: 0;
@@ -189,47 +173,38 @@ div.heighttest { /* Midlertidig, skal aflives senere */
 	z-index: 10000;
 }
 
-.topnav ul {
-	margin-top: 12px;
+nav ul {
+	width: 960px;
+	max-width: 100%;
+	margin: 15px auto;
 	display: inline-block;
-	text-align: initial;
+	text-align: center;
 }
 
-.topnav ul li {
+nav ul li {
 	display: inline;
 	padding: 2em;
 }
 
-.topnav ul li a {
+nav ul li a {
 	color: #226390;
 	font-size: 20px;
 	-webkit-transition: color 0.1s;
 }
 
-.topnav ul li a:hover {
+nav ul li a:hover {
 	color: #268dbd;
 }
 
-.topnav ul li a.active {
+nav ul li a.active {
 	color: #268dbd;
 }
 
-img#topnavLogo {
+nav #topNavLogo {
 	position: absolute;
-	left: 10px;
-	top: 7px;
-	height: 70%;
-}
-
-nav {
-	background: #fff;
-	width: 100%;
-}
-
-nav ul {
-	width: 960px;
-	max-width: 100%;
-	margin: 0 auto;
+	left: 15px;
+	top: 12px;
+	height: 55%;
 }
 
 /*-------------------------
@@ -304,10 +279,6 @@ h1 {
 	font-size: 54px;
 }
 
-h1#headerTitle {
-	text-align: left;
-}
-
 /*-------------------------
  Style Guide page styles
  ------------------------*/
@@ -315,6 +286,19 @@ h1#headerTitle {
 #styleguide {
 	font-family: 'Lato', sans-serif;
  	font-weight: 400;
+}
+
+#styleguide main {
+	width: 960px;
+	max-width: 100%;
+	margin: 0px auto;
+	/*background: #268dbd;*/
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#styleguide aside {
+	padding-top: 0px;
 }
 
 #styleguide aside>div {
@@ -339,4 +323,22 @@ h1#headerTitle {
 #styleguide ul li:first-child a {
 	font-weight: 700;
 	font-size: 24px;
+}
+
+/*-------------------------
+ Responsive / Small Screen Styles
+ ------------------------*/
+
+@media only screen and (max-width: 720px) {
+	aside {
+		width: 100%;
+	}
+
+	main {
+		flex-wrap: wrap
+	}
+
+	nav ul {
+		display: none;
+	}
 }
