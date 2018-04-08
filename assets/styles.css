@@ -207,6 +207,17 @@ nav #topNavLogo {
 	height: 55%;
 }
 
+#usernav {
+	position: absolute; 
+	right: 15px;
+	top: 12px;
+	background: #ccc;
+	font-size: 12px;
+	color: ;
+}
+
+
+
 /*-------------------------
  Flex layouts
  ------------------------*/
@@ -241,6 +252,7 @@ nav #topNavLogo {
 	opacity: 0.7;
 	background-size: cover;
 	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
 }
 
 .articleimgDashboard:hover {
