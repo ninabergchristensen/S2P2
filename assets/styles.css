@@ -322,12 +322,12 @@ h1 {
 	margin-bottom: 20px;
 }
 
-#styleguide ul li a {
+#styleguide aside ul li a {
 	color: #f1f1f2;
 	-webkit-transition: color 0.1s, padding 0.1s;
 }
 
-#styleguide ul li a:hover {
+#styleguide aside ul li a:hover {
 	padding-left: 5px;
 	color: #ffffff;
 }
