@@ -45,6 +45,7 @@ a {
 }
 
 button.accButton, button.accButtonOpen {
+	margin-top: 10px;
 	width: 100px;
 	padding: 5px;
 	background: #268dbd;
@@ -173,6 +174,11 @@ nav {
 	z-index: 10000;
 }
 
+nav#styleguideExample {
+	width: 500px;
+	position: static;
+}
+
 nav ul {
 	width: 960px;
 	max-width: 100%;
@@ -206,6 +212,17 @@ nav #topNavLogo {
 	top: 12px;
 	height: 55%;
 }
+
+#usernav {
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	background: #ccc;
+	font-size: 12px;
+	color: ;
+}
+
+
 
 /*-------------------------
  Flex layouts
@@ -241,6 +258,7 @@ nav #topNavLogo {
 	opacity: 0.7;
 	background-size: cover;
 	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
 }
 
 .articleimgDashboard:hover {
@@ -306,21 +324,21 @@ h1 {
 	padding-top: 15px;
 }
 
-#styleguide ul {
+#styleguide aside ul {
 	margin-bottom: 20px;
 }
 
-#styleguide ul li a {
+#styleguide aside ul li a {
 	color: #f1f1f2;
 	-webkit-transition: color 0.1s, padding 0.1s;
 }
 
-#styleguide ul li a:hover {
+#styleguide aside ul li a:hover {
 	padding-left: 5px;
 	color: #ffffff;
 }
 
-#styleguide ul li:first-child a {
+#styleguide aside ul li:first-child a {
 	font-weight: 700;
 	font-size: 24px;
 }
