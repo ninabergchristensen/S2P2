@@ -45,6 +45,7 @@ a {
 }
 
 button.accButton, button.accButtonOpen {
+	margin-top: 10px;
 	width: 100px;
 	padding: 5px;
 	background: #268dbd;
@@ -173,6 +174,11 @@ nav {
 	z-index: 10000;
 }
 
+nav#styleguideExample {
+	width: 500px;
+	position: static;
+}
+
 nav ul {
 	width: 960px;
 	max-width: 100%;
@@ -208,7 +214,7 @@ nav #topNavLogo {
 }
 
 #usernav {
-	position: absolute; 
+	position: absolute;
 	right: 15px;
 	top: 12px;
 	background: #ccc;
@@ -318,7 +324,7 @@ h1 {
 	padding-top: 15px;
 }
 
-#styleguide ul {
+#styleguide aside ul {
 	margin-bottom: 20px;
 }
 
@@ -332,7 +338,7 @@ h1 {
 	color: #ffffff;
 }
 
-#styleguide ul li:first-child a {
+#styleguide aside ul li:first-child a {
 	font-weight: 700;
 	font-size: 24px;
 }

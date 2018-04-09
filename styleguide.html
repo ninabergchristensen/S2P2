@@ -11,9 +11,9 @@
 
 	<nav>
 		<ul>
-			<li><a class="active" href="index.html">DASHBOARD</a></li>
-			<li><a href="lessonplans.html">LESSON PLANS</a></li>
-			<li><a href="support.html">SUPPORT</a></li>
+			<li><a href="#general">General</a></li>
+			<li><a href="#elements">Elements</a></li>
+			<li><a href="#layouts">Layouts</a></li>
 		</ul>
 	</nav>
 
@@ -100,6 +100,65 @@
 					</li>
 					<li>
 						<h3>Forms</h3>
+					</li>
+					<li>
+						<h3>Top navigation</h3>
+						<nav id="styleguideExample">
+							<ul>
+								<li><a href="#destination">DEST1</a></li>
+								<li><a href="#destination">DEST2</a></li>
+								<li><a href="#destination">DEST3</a></li>
+							</ul>
+						</nav>
+						<button type="button" value="acc-topnav" id="btn-topnav" class="accButton" onclick="accordion(value,id)">Show code</button>
+						<div id="acc-topnav" class="accBox" style="display: none;">
+							<code>
+								HTML<br>
+								&ltnav&gt<br>
+							  	&nbsp;&nbsp;&ltul&gt<br>
+				        		&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&lta href="#destination"&gtDEST1&lt/a&gt&lt/li&gt<br>
+				          	&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&lta href="#destination"&gtDEST2&lt/a&gt&lt/li&gt<br>
+				          	&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gt&lta href="#destination"&gtDEST3&lt/a&gt&lt/li&gt<br>
+				        	&nbsp;&nbsp;&lt/ul&gt<br>
+						  	&lt/nav&gt<br>
+							</code>
+							<br>
+							<code>
+								CSS<br>
+								nav {<br>
+									&nbsp;&nbsp;width: 100%;<br>
+									&nbsp;&nbsp;height: 55px;<br>
+									&nbsp;&nbsp;background-color: #f1f1f2;<br>
+									&nbsp;&nbsp;position: fixed;<br>
+									&nbsp;&nbsp;top: 0;<br>
+									&nbsp;&nbsp;text-align: center;<br>
+									&nbsp;&nbsp;box-shadow: 0 0.1px 7px #262626;<br>
+									&nbsp;&nbsp;z-index: 10000;<br>
+								}<br>
+								<br>
+								nav ul {<br>
+									&nbsp;&nbsp;width: 960px;<br>
+									&nbsp;&nbsp;max-width: 100%;<br>
+									&nbsp;&nbsp;margin: 15px auto;<br>
+									&nbsp;&nbsp;display: inline-block;<br>
+									&nbsp;&nbsp;text-align: center;<br>
+								}<br>
+								<br>
+								nav ul li a {<br>
+									&nbsp;&nbsp;color: #226390;<br>
+									&nbsp;&nbsp;font-size: 20px;<br>
+									&nbsp;&nbsp;-webkit-transition: color 0.1s;<br>
+								}<br>
+								<br>
+								nav ul li a:hover {<br>
+									&nbsp;&nbsp;color: #268dbd;<br>
+								}<br>
+								<br>
+								nav ul li a.active {<br>
+									&nbsp;&nbsp;color: #268dbd;<br>
+								}<br>
+							</code>
+						</div>
 					</li>
 				</ul>
 
