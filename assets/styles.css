@@ -149,6 +149,7 @@ section div {
 
 aside {
 	width: 250px;
+	height: 100vh;
 	max-width: 100%;
 	background: #268dbd;
 	padding: 15px 15px;
@@ -162,15 +163,14 @@ aside h2 {
 
 aside h3, aside h4 {
 	font-weight: 400;
+	font-family: 'Cabin Sketch';
 }
 
 div.divider {
-	position: relative;
-	right: 15px;
+	height: 15px;
+	width: 280px;
 	margin-top: 15px;
-	margin-bottom: 15px;
-	height: 10px;
-	width: 113.5%;
+	margin-left: -15px;
 	background: white;
 }
 
@@ -200,6 +200,29 @@ div.lessonPlanBtn a {
 div.lessonPlanBtn a:hover {
 	color: #268dbd;
 }
+
+table {
+	padding-top: 10px;
+	width: 100%;
+}
+
+td, th {
+	height: 30px;
+	font-weight: 400;
+	border: solid white 1px;
+	background: #f1f1f2;
+	color: #226390;
+	padding: 5px;
+}
+
+td {
+	text-align: right;
+}
+
+th {
+	text-align: left;
+}
+
 /*-------------------------
  Nav
  ------------------------*/
