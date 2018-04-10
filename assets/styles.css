@@ -176,7 +176,7 @@ div.divider {
 
 div.lessonPlanImg {
 	margin-top: 10px;
-	height: 50px;
+	height: 100px;
 	width: 100%;
 	background: white;
 	background-image: url('img/tagtilepile.jpg');
@@ -367,33 +367,9 @@ h1 {
  	font-weight: 400;
 }
 
-#styleguide aside {
+/*#styleguide aside {
 	padding-top: 0px;
-}
-
-#styleguide aside>div {
-	position: fixed;
-	padding-top: 15px;
-}
-
-#styleguide aside ul {
-	margin-bottom: 20px;
-}
-
-#styleguide aside ul li a {
-	color: #f1f1f2;
-	-webkit-transition: color 0.1s, padding 0.1s;
-}
-
-#styleguide aside ul li a:hover {
-	padding-left: 5px;
-	color: #ffffff;
-}
-
-#styleguide aside ul li:first-child a {
-	font-weight: 700;
-	font-size: 24px;
-}
+}*/
 
 /*-------------------------
  Responsive / Small Screen Styles
