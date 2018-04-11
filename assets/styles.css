@@ -319,7 +319,7 @@ nav #topNavLogo {
 .articleimgDashboard {
 	min-height: 200px;
 	background-image: url('img/environment1.jpg');
-	opacity: 0.7;
+	opacity: 0.85;
 	background-size: cover;
 	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
