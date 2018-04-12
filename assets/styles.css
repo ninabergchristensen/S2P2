@@ -152,6 +152,10 @@ section div {
 	width: 100%;
 }
 
+.bluesection {
+	background: #226390;
+}
+
 /*-------------------------
  Sidebar
  ------------------------*/
@@ -338,6 +342,10 @@ nav #topNavLogo {
 	flex-basis: 25%;
 }
 
+.twocolumnflexbox {
+	flex-grow: 6 !important;
+}
+
 /*-------------------------
  Article / feed
  ------------------------*/
@@ -395,7 +403,7 @@ Support, feed, web and badges
  ------------------------*/
  .webtitle {
 	color: white;
-	text-align: center;;
+	text-align: center;
 }
 
  .articleimgSupport {
@@ -503,6 +511,7 @@ h1 {
 	font-size: 54px;
 	margin: 0;
 	margin-left: 15px;
+	text-align: center;
 }
 
 /*-------------------------
