@@ -86,7 +86,7 @@ button.accButton:focus, button.accButtonOpen:focus {
 }
 
 .colorBlue1 {
-	color: ##268dbd;
+	color: #268dbd;
 }
 
 .colorBlue2 {
@@ -126,6 +126,14 @@ main {
 	margin: 0px auto;
 	display: flex;
 	flex-flow: row nowrap;
+}
+
+main.blue {
+	background: #268dbd;
+}
+
+main.white {
+	background: #f1f1f2;
 }
 
 main>div {
@@ -202,12 +210,12 @@ div.lessonPlanBtn a:hover {
 	color: #268dbd;
 }
 
-table {
+aside table {
 	padding-top: 10px;
 	width: 100%;
 }
 
-td, th {
+aside td, aside th {
 	height: 30px;
 	font-weight: 400;
 	border: solid white 1px;
@@ -216,11 +224,11 @@ td, th {
 	padding: 5px;
 }
 
-td {
+aside td {
 	text-align: right;
 }
 
-th {
+aside th {
 	text-align: left;
 }
 
@@ -281,12 +289,33 @@ nav #topNavLogo {
 #usernav {
 	position: absolute;
 	right: 15px;
-	top: 12px;
-	background: #ccc;
+	top: 4px;
 	font-size: 12px;
-	color: ;
 }
 
+#usernav a {
+	font-weight: 700;
+	color: #226390;
+}
+
+#usernav td, #usernav th {
+	padding: 0;
+	vertical-align: bottom;
+	text-align: right;
+	font-size: 13px;
+}
+
+#usernav td#topAlign {
+	vertical-align: top;
+	font-size: 11.5px;
+}
+
+#usernav img {
+	position: relative;
+	left: 2px;
+	top: 2px;
+	height: 40px;
+}
 
 
 /*-------------------------
@@ -320,7 +349,7 @@ nav #topNavLogo {
 .articleimgDashboard {
 	min-height: 200px;
 	background-image: url('img/environment1.jpg');
-	opacity: 0.7;
+	opacity: 0.85;
 	background-size: cover;
 	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
@@ -328,6 +357,20 @@ nav #topNavLogo {
 }
 
 .articleimgDashboard:hover {
+	opacity: 1;
+}
+
+.articleimgLessonPlans {
+	min-height: 200px;
+	background-image: url('img/tagtilepile2.jpg');
+	opacity: 0.85;
+	background-size: cover;
+	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
+	margin-bottom: 25px;
+}
+
+.articleimgLessonPlans:hover {
 	opacity: 1;
 }
 
@@ -347,6 +390,106 @@ nav #topNavLogo {
 }
 
 /*-------------------------
+Support, feed, web and badges
+ ------------------------*/
+ .webtitle {
+	color: white;
+	text-align: center;;
+}
+
+ .articleimgSupport {
+ 	min-height: 300px;
+ 	background-image: url('img/LB-webisodes.png');
+ 	opacity: 0.85;
+ 	background-size: cover;
+ 	-webkit-transition: opacity 0.1s;
+ 	border-radius: 4px;
+ 	margin-bottom: 25px;
+ }
+
+ .articleimgWeb {
+ 	min-height: 600px;
+ 	background-image: url('img/LB-webisodes.png');
+ 	opacity: 0.85;
+ 	background-size: cover;
+ 	-webkit-transition: opacity 0.1s;
+ 	border-radius: 4px;
+ 	margin-bottom: 25px;
+ }
+
+ .articleimgSupport:hover {
+ 	opacity: 1;
+ }
+
+/*badges*/
+.badges {
+	margin-left: -90px;
+}
+ .badgeImg {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: block;
+ }
+
+ .badgeHead {
+	 text-align: center;
+ }
+/* POP UP TIL BADGES*/
+.popup {
+    position: relative;
+    display: block;
+    cursor: pointer;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+		bottom: 150px;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*-------------------------
  Type
  ------------------------*/
 
@@ -357,6 +500,8 @@ h1, h2, h3, h4 ,h5, h6 {
 h1 {
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 54px;
+	margin: 0;
+	margin-left: 15px;
 }
 
 /*-------------------------
