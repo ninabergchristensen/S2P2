@@ -267,6 +267,7 @@ nav ul li {
 
 nav ul li a {
 	color: #226390;
+	text-transform: uppercase;
 	font-size: 20px;
 	-webkit-transition: color 0.1s;
 }
