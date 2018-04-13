@@ -74,7 +74,7 @@
 
 <div>
           <div>
-            <form id="myEvent" method="post">
+            <form id="myEvent" method="post" name=event>
                       <div>
                         <input type="text" placeholder="Event name" name="userid"><br>
                         <input type="date" name="date" placeholder="Date" id="date" alt="Date">
@@ -83,7 +83,7 @@
                       <!--  <input type="time" name="time" placeholder"Time" id="time" alt="Time"><br>   VIRKER IKKE--->
                         <textarea placeholder"Type event details here" id="msg" name="event_info"></textarea>
                         <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
-                        <button type="button" onclick="check(this.form)" value="myEvent" class="loginBtn">Create Event!</button><br>
+                        <button type="button" onclick="check(this.form)" value="event" class="loginBtn">Create Event!</button><br>
                       </div>
           </div>
 </div>
@@ -129,6 +129,19 @@
 			</aside>
 		</main>
 		<script src="assets/script.js"></script>
+    <script>
+    // function for Event Creator
+
+    function check(form){
+    	if(form.userid.value == "School" && form.date.value =="12" && form.month.value =="12" /*&& form.time.value =="12.12"*/ && form.time.value =="2018")
+    	{
+    		alert("You have created a new event!")
+    	}
+    	else {
+    		alert("Ooooooops!Something went wrong, try again")
+    	}
+    }
+    </script>
 	</body>
 
 </html>

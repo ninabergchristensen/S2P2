@@ -47,16 +47,3 @@ window.onclick = function(event) {
     }
   }
 }
-
-// function for Event Creator
-const myEvent;
-
-function check(myEvent){
-	if(form.userid.value == "School" && form.date.value =="12" && form.month.value =="12" /*&& form.time.value =="12.12"*/ && form.time.value =="2018")
-	{
-		alert("You have created a new event!")
-	}
-	else {
-		alert("Ooooooops!Something went wrong, try again")
-	}
-}
