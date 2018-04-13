@@ -103,7 +103,8 @@ header {
 	background: url('img/environment1.jpg') center;
 	background-size: cover;
 	padding: 30px 0;
-	margin: 15px auto;
+	margin: auto;
+	margin-bottom: 0;
 }
 
 header div {
@@ -430,10 +431,20 @@ dropdown
 	padding: 3px;
 }
 
-.articleimgHeader p {
+.articleimgHeader img {
+	height: 20px;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 5px;
+	float: left;
+}
+
+.articleimgHeader p, .articleimgHeader h2 {
+	font-weight: 400;
 	color: #f1f1f2;
 	margin: 0;
 	margin-left: 10px;
+	margin-top: 1.5px;
 }
 
 /*-------------------------
