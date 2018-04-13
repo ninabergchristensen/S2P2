@@ -14,3 +14,15 @@ function accordion(value,id){
 		document.getElementById(accordionThis).style.display = "none";
 	}
 }
+
+// function til login
+function check(form)
+{
+  if(form.userid.value == "John" && form.pswrd.value == "123")
+  {
+    window.open('index.html')
+  }
+  else {
+    alert("The username is incorrect")
+  }
+}
