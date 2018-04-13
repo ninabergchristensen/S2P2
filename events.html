@@ -5,6 +5,36 @@
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
+    <script>
+
+    // function for Event Creator
+    <SCRIPT LANGUAGE="JavaScript">
+    function testResults (form) {
+        TestVar =  (form.eventname.value)
+        if (TestVar == "School") {
+            (window.confirm("Congratulations! you just created a new event"))
+          window.location.href = "http://";
+          } else
+            alert ("Oooops! Something went wrong! Try again!");
+    }
+
+    function isNumberString (InString)  {
+        if(InString.length==0) return (false);
+        var RefString="1234567890";
+        for (Count=0; Count < InString.length; Count++)  {
+            TempChar= InString.substring (Count, Count+1);
+            if (RefString.indexOf (TempChar, 0)==-1)
+                return (false);
+        }
+        return (true);
+    }
+
+    function seeTextArea (form) {
+        alert (form.eventinfo.value);
+    }
+    </SCRIPT>
+
+    </script>
 	</head>
 
 	<body>
@@ -72,21 +102,23 @@
 
 
 
-<div>
-          <div>
-            <form id="myEvent" method="post" name=event>
-                      <div>
-                        <input type="text" placeholder="Event name" name="userid"><br>
-                        <input type="date" name="date" placeholder="Date" id="date" alt="Date">
-                        <input type="month" name="month" placeholder="Month" id="month" alt="Month">
-                        <input type="year" name="year" placeholder="Year" id="year" alt="year"><br>
-                      <!--  <input type="time" name="time" placeholder"Time" id="time" alt="Time"><br>   VIRKER IKKE--->
-                        <textarea placeholder"Type event details here" id="msg" name="event_info"></textarea>
-                        <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
-                        <button type="button" onclick="check(this.form)" value="event" class="loginBtn">Create Event!</button><br>
-                      </div>
-          </div>
-</div>
+
+          <div class="container">
+             <form name="myevent" id="myEvent">
+                 <h1>Event Creator</h1>
+                 <input type="text" placeholder="Event name" name="eventname" value="Event name" required><br>
+                 <input type="date" name="date" placeholder="DD/MM/YY" id="date" alt="Date" value="DD/MM/YY" required><br>
+                 <textarea placeholder="Type event details here" id="msg" name="eventinfo"></textarea><br>
+                 <label for="host"l>Who is hosting?</label><br>
+                 <input type="text" placeholder="Teacher name" name="host">
+                 <input type="text" placeholder="Teacher name" name="host">
+                 <input type="text" placeholder="Teacher name" name="host"><br>
+                 <label for="file">Upload pictures</label><br>
+                 <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
+                 <input type="button" name="button" value="Create Event" onClick="testResults(this.form)" class="loginBtn">
+             </form>
+             </div>
+
 
       </li>
     </ul>
@@ -129,19 +161,6 @@
 			</aside>
 		</main>
 		<script src="assets/script.js"></script>
-    <script>
-    // function for Event Creator
-
-    function check(form){
-    	if(form.userid.value == "School" && form.date.value =="12" && form.month.value =="12" /*&& form.time.value =="12.12"*/ && form.time.value =="2018")
-    	{
-    		alert("You have created a new event!")
-    	}
-    	else {
-    		alert("Ooooooops!Something went wrong, try again")
-    	}
-    }
-    </script>
 	</body>
 
 </html>
