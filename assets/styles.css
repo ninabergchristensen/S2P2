@@ -545,6 +545,16 @@ Support, feed, web and badges
     margin-left: -80px;
 }
 
+/* infobox (div) popup */
+
+.infobox {
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	background: #268dbd;
+	color: #fff;
+}
+
 /* Popup arrow */
 .popup .popuptext::after {
     content: "";
