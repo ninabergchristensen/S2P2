@@ -500,20 +500,34 @@ Support, feed, web and badges
     position: relative;
     display: block;
     cursor: pointer;
-		margin-left: auto;
-		margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #badgeholder {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
 	max-width: 100%;
+	background: #e1eff4;
+	border-radius: 4px;
+	/*margin: 0px -15px;
+	padding: 15px;*/
 }
 
 #badgeholder>img{
-	flex-grow: 1;
-	max-width: 20%;
-	margin-left: 5px;
-	opacity: 0.5;*/
+	width: 75px;
+	flex-grow: 0;
+	margin: 15px;
+}
+
+#badgeholder>img.incomplete-badge {
+	opacity: 0.5;
+}
+
+#badgeholder>img.complete-badge {
+	opacity: 1;
 }
 
 /* The actual popup (appears on top) */
