@@ -5,15 +5,14 @@
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
-    <script>
 
     // function for Event Creator
-    <SCRIPT LANGUAGE="JavaScript">
+    <script language="JavaScript">
     function testResults (form) {
         TestVar =  (form.eventname.value)
         if (TestVar == "School") {
-            (window.confirm("Congratulations! you just created a new event"))
-          window.location.href = "http://";
+            (window.confirm("Congratulations! you just created a new event! Return to profile?"))
+          window.location.href = "profile.html";
           } else
             alert ("Oooops! Something went wrong! Try again!");
     }
@@ -28,11 +27,6 @@
         }
         return (true);
     }
-
-    function seeTextArea (form) {
-        alert (form.eventinfo.value);
-    }
-    </SCRIPT>
 
     </script>
 	</head>
@@ -126,39 +120,9 @@
   </section>
 </div>
 <!-- 		Sidebar 		-->
-			<aside>
-				<div>
-					<h2>Welcome, John</h2>
-					<div class="divider"></div>
-					<h3><span class="left">Top lesson plans</span></h3>
-					<h4><span class="right">April</span></h4><br>
-
-					<div class="lessonPlanImg"> </div>
-					<div class="lessonPlanBtn"><a href="">VIEW LESSON PLAN</a></div>
-
-					<div class="lessonPlanImg"> </div>
-					<div class="lessonPlanBtn"><a href="">VIEW LESSON PLAN</a></div>
-
-					<div class="lessonPlanImg"> </div>
-					<div class="lessonPlanBtn"><a href="">VIEW LESSON PLAN</a></div>
-					<div class="divider"></div>
-					<h3><span class="left">Most active schools</span></h3>
-					<h4><span class="right">April</span></h4>
-					<table>
-						<tr>
-							<th>Rudehøjbøgskolen</th><td>5672KP</td>
-						</tr>
-						<tr>
-							<th>ITX Herning</th><td>4728KP</td>
-						</tr>
-						<tr>
-							<th>Vesterhaven</th><td>3652KP</td>
-						</tr>
-					</table>
-					<div class="divider"></div>
-
-				</div>
-			</aside>
+    <aside>
+      <p>Sidebar content</p>
+    </aside>
 		</main>
 		<script src="assets/script.js"></script>
 	</body>
