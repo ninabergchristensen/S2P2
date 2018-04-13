@@ -6,7 +6,7 @@
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
 
-    // function for Event Creator
+<!--- function for Event Creator -->
     <script language="JavaScript">
     function testResults (form) {
         TestVar =  (form.eventname.value)
@@ -63,12 +63,18 @@
                 </div>
 		</nav>
 		<header>
-			<h1 class="webtitle">KEDU - EVENTS</h1>
+			<h1 class="webtitle">EVENTS</h1>
 		</header>
 		<main>
 <!-- 		Page content 		-->
 
+
 <div>
+  <section>
+    <div>
+      <h2>Ucomming events</h2>
+    </div>
+  </secion>
   <section>
     <ul>
       <li>
@@ -100,27 +106,41 @@
 
 
 <!--- EVENT CREATOR --->
-          <div class="container">
-             <form name="myevent" id="myEvent">
-                 <h1>Event Creator</h1>
-                 <input type="text" placeholder="Event name" name="eventname" value="Event name" required><br>
-                 <input type="date" name="date" placeholder="DD/MM/YY" id="date" alt="Date" value="DD/MM/YY" required><br>
-                 <textarea placeholder="Type event details here" id="msg" name="eventinfo"></textarea><br>
-                 <label for="host"l>Who is hosting?</label><br>
-                 <input type="text" placeholder="Teacher name" name="host">
-                 <input type="text" placeholder="Teacher name" name="host">
-                 <input type="text" placeholder="Teacher name" name="host"><br>
-                 <label for="file">Upload pictures</label><br>
-                 <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
-                 <input type="button" name="button" value="Create Event" onClick="testResults(this.form)" class="loginBtn">
-             </form>
-             </div>
-
-
+          <div class="flexcontainer">
+                <div>
+                      <section>
+                        <div>
+                          <h2>Want to create your own event?</h2>
+                            <h3>Try the new EventCreator!</h3>
+                            <p>The new EventCreator tool was succesfully created by young minds to enable teachers(...)</p>
+                        </div>
+                      </secion>
+                </div>
+                <div>
+                      <section>
+                                <div class="container">
+                                   <form name="myevent" id="myEvent">
+                                       <h1>EventCreator</h1>
+                                       <input type="text" placeholder="Event name" name="eventname" value="Event name" required><br>
+                                       <input type="date" name="date" placeholder="DD/MM/YY" id="date" alt="Date" value="DD/MM/YY" required><br>
+                                       <textarea placeholder="Type event details here" id="msg" name="eventinfo"></textarea><br>
+                                       <label for="host"l>Who is hosting?</label><br>
+                                       <input type="text" placeholder="Teacher name" name="host">
+                                       <input type="text" placeholder="Teacher name" name="host">
+                                       <input type="text" placeholder="Teacher name" name="host"><br>
+                                       <label for="file">Upload pictures</label><br>
+                                       <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
+                                       <input type="button" name="button" value="Create Event" onClick="testResults(this.form)" class="loginBtn">
+                                   </form>
+                                   </div>
+                      </section>
+              </div>
+          </div>
       </li>
     </ul>
 
   </section>
+</div>
 </div>
 <!-- 		Sidebar 		-->
     <aside>
