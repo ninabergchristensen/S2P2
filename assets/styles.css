@@ -103,7 +103,8 @@ header {
 	background: url('img/environment1.jpg') center;
 	background-size: cover;
 	padding: 30px 0;
-	margin: 15px auto;
+	margin: auto;
+	margin-bottom: 0;
 }
 
 header div {
@@ -317,7 +318,49 @@ nav #topNavLogo {
 	top: 2px;
 	height: 40px;
 }
+/*-------------------------
+dropdown
+ ------------------------*/
+ .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+		opacity: 0;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+		background: image("assets/img/profiletag.png");
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 
 /*-------------------------
  Flex layouts
@@ -388,10 +431,20 @@ nav #topNavLogo {
 	padding: 3px;
 }
 
-.articleimgHeader p {
+.articleimgHeader img {
+	height: 20px;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 5px;
+	float: left;
+}
+
+.articleimgHeader p, .articleimgHeader h2 {
+	font-weight: 400;
 	color: #f1f1f2;
 	margin: 0;
 	margin-left: 10px;
+	margin-top: 1.5px;
 }
 
 /*-------------------------
@@ -509,6 +562,83 @@ Support, feed, web and badges
 }
 
 /*-------------------------
+Login
+ ------------------------*/
+ /* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+		padding: 15px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+		align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra style for the buttons */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+}
+
+.loginBtn {
+    width: 100%;
+    padding: 10px 18px;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 25%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 30px;
+		margin: 10px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+/* the info text about KEDU */
+.loginHead {
+	color: #226390;
+	text-align: left;
+	margin-left: 40px;
+}
+
+.loginInfo {
+	margin-left: 40px;
+	text-align: left;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/*-------------------------
  Type
  ------------------------*/
 
@@ -553,4 +683,17 @@ h1 {
 	nav ul {
 		display: none;
 	}
+}
+
+/*-------------------------
+ My School styles
+ ------------------------*/
+.schoolnameHeader {
+	font-family: 'Cabin Sketch';
+	font-size: 30px;
+}
+
+.latestpostHeader {
+		font-family: 'Cabin Sketch';
+		font-size: 30px;
 }
