@@ -71,40 +71,22 @@
           </div>
 
 
-          <div>
-            <div class="articleimgDashboard">
-              <div class="articleimgHeader">
-                <p>NEWS: Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="flexcontainer">
+<div>
           <div>
-            <div class="articleimgDashboard">
-              <div class="articleimgHeader">
-                <p>NEWS: Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
+            <form id="myEvent" method="post">
+                      <div>
+                        <input type="text" placeholder="Event name" name="userid"><br>
+                        <input type="date" name="date" placeholder="Date" id="date" alt="Date">
+                        <input type="month" name="month" placeholder="Month" id="month" alt="Month">
+                        <input type="year" name="year" placeholder="Year" id="year" alt="year"><br>
+                      <!--  <input type="time" name="time" placeholder"Time" id="time" alt="Time"><br>   VIRKER IKKE--->
+                        <textarea placeholder"Type event details here" id="msg" name="event_info"></textarea>
+                        <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
+                        <button type="button" onclick="check(this.form)" value="myEvent" class="loginBtn">Create Event!</button><br>
+                      </div>
           </div>
-
-          <div>
-            <div class="articleimgDashboard">
-              <div class="articleimgHeader">
-                <p>EVENT: Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="articleimgDashboard">
-              <div class="articleimgHeader">
-                <p>EVENT: Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-          </div>
-
+</div>
 
       </li>
     </ul>
