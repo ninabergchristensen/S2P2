@@ -434,3 +434,16 @@ h1 {
 		display: none;
 	}
 }
+
+/*-------------------------
+ My School styles
+ ------------------------*/
+.schoolnameHeader {
+	font-family: 'Cabin Sketch';
+	font-size: 30px;
+}
+
+.latestpostHeader {
+		font-family: 'Cabin Sketch';
+		font-size: 30px;
+}
