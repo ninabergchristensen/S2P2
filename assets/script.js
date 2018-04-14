@@ -53,11 +53,19 @@ window.onclick = function(event) {
 ////////// infobox script
 
 function infobox(event) {
-	var targetTitle = event.target.title;
+	var targetObject = event.target;
 	var newInfobox = document.createElement("div");
-	var newInfoboxText = document.createTextNode(targetTitle);
-    newInfobox.appendChild("<h2>" + newInfoboxText + "</h2><p>Derp.</p>");
-    newInfobox.className = "infobox";
-    document.body.appendChild(newInfobox);
-    //alert(targetTitle);
+	var newInfoboxText = targetObject.title;
+    newInfobox.innerHTML = "<p>" + newInfoboxText + "</p>";
+    newInfobox.id = "infobox";
+    document.getElementById("badgeholder").appendChild(newInfobox); // virker
+    //document.targetObject.after(newInfobox);
+    //alert(targetObject);
+}
+
+function clearInfobox(event) {
+	//var klaphat = document.getElementById("infobox");
+	//alert(klaphat);
+	var removeThis = document.getElementById("infobox");
+	document.getElementById("badgeholder").removeChild(removeThis);
 }
