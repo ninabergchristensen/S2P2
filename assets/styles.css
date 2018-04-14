@@ -385,6 +385,7 @@ dropdown
 	flex-grow: 6 !important;
 }
 
+
 /*-------------------------
  Article / feed
  ------------------------*/
@@ -747,9 +748,25 @@ h1 {
 .schoolnameHeader {
 	font-family: 'Cabin Sketch';
 	font-size: 30px;
+	text-align: center;
+	color: #268dbd;
 }
 
 .latestpostHeader {
 		font-family: 'Cabin Sketch';
 		font-size: 30px;
+		text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.flex-container > div {
+  width: 70px;
+  margin: 20px;
+  text-align: right;
+  font-size: 30px;
 }
