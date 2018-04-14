@@ -5,6 +5,16 @@
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
+
+			<!-- JS for comments VED IKKE HVORFOR DET IKKE VIRKER OMGGGGG-->
+      <script type="text/javascript">
+      function getwords() {
+        text = words.value;
+        document.getElementById("para").innerHTML += 'p'+text
+        document.getElementById("words").value = "enter"
+      };
+      </script>
+
 	</head>
 
 	<body>
@@ -48,19 +58,54 @@
 
       <div>
 				<section>
-					<ul>
+
+<!-- 		News segment		-->
+          <ul>
 						<li>
 							<div class="flexcontainer">
+								<div>
+									<div class="articleimgDashboard">
+										<div class="articleimgHeader">
+											<img src="assets/img/tag_news.png"><p>Lorem ipsum dolor sit amet</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="articleimgDashboard">
+										<div class="articleimgHeader">
+											<img src="assets/img/tag_event.png"><p>Lorem ipsum dolor sit amet</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="articleimgDashboard">
+										<div class="articleimgHeader">
+											<img src="assets/img/tag_event.png"><p>Lorem ipsum dolor sit amet</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
 
+<!-- 		Blog segment		-->
+          <ul>
+            <li>
+              <div class="flexcontainer">
 								<div>
                   <div class="blog">
                       <div class="blogpost">
                           <div class="card">
+                            <h2>LATEST BLOGPOST</h2>
+                            <h3>Title description, Sep 2, 2017</h3>
                             <div class="fakeimg" style="height:200px;">Image</div>
-                            <h2>LATEST NEWS</h2>
-                            <h3>Title description, Dec 7, 2017</h3>
                             <p>Some text..</p>
                             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <form>
+                              <textarea id="words" rows="10" cols="45">Enter comment here</textarea>
+                              <input type="button" onclick="getwords()" value="Enter" /> <br>
+                              <p id="para" class="para"></p>
+                            </form>
                           </div>
                           <div class="card">
                             <h2>LATEST BLOGPOST</h2>
@@ -68,37 +113,32 @@
                             <div class="fakeimg" style="height:200px;">Image</div>
                             <p>Some text..</p>
                             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <form>
+                              <textarea id="words" rows="10" cols="45">Enter comment here</textarea>
+                              <input type="button" onclick="getwords()" value="Enter" /> <br>
+                              <p id="para" class="para"></p>
+                            </form>
                           </div>
                       </div>
                   </div>
 								</div>
 
-								<div>
-                  <div class="blog">
-                      <div class="blogpost">
-                          <div class="card">
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <h2>LATEST NEWS</h2>
-                            <h3>Title description, Dec 7, 2017</h3>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                          </div>
-                          <div class="card">
-                            <h2>LATEST BLOGPOST</h2>
-                            <h3>Title description, Sep 2, 2017</h3>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                          </div>
+                <div>
+                      <div>
+                      <h2>Join the conversation!</h2>
+                        <h3>Create your own blogpost here</h3>
                       </div>
-                  </div>
-								</div>
+
+
+                </div>
+
+
 
 							</div>
 						</li>
 					</ul>
 				</section>
-
+</div>
     <!---    <section>
           <ul>
             <li>
@@ -117,8 +157,6 @@
             </li>
           </ul>
         </section>--->
-
-			</div>
 <!-- 		Sidebar 		-->
 			<aside>
 				<div>
