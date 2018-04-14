@@ -425,13 +425,18 @@ dropdown
 	justify-content: space-between;
 	flex-flow: row wrap;
 	align-content: stretch;
-	margin: 0px -15px;
+	/*margin: 0px -15px;*/
 }
 
 .flexcontainer>div {
-	margin: 0px 15px;
+	margin-right: 20px;
 	flex-grow: 1;
 	flex-basis: 25%;
+}
+
+.flexcontainer>div:last-child {
+	margin-right: 0px;
+	flex-grow: 1;
 }
 
 .twocolumnflexbox {
@@ -649,7 +654,8 @@ Login
  /* Bordered form */
 form {
     border: 3px solid #f1f1f1;
-		padding: 15px;
+    border-radius: 4px;
+	padding: 15px;
 }
 
 /* Full-width inputs */
@@ -658,7 +664,7 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-		align-items: center;
+	align-items: center;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
