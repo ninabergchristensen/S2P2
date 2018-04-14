@@ -49,21 +49,24 @@
 			<div>
 				<section>
 					<div class="flexcontainer">
-						<div class="bluebox">
+						<div class="palebluebox">
 							<h2>Create your own Lesson Plans</h2>
-							<a href="lessonplanbuilder.html" value="newLessonPlan" class="buttonLink">Create new</a>
+							<a href="lessonplanbuilder.html" value="newLessonPlan" class="ctaButtonLink">Create new</a>
 						</div>
-						<div class="twocolumnflexbox">
+						<div class="twocolumnflexbox palebluebox">
 							<h2>Edit your Lesson Plans</h2>
-							<div id="myLPListholder">
-
-							</div>
+							<div id="myLPListholder"></div>
 						</div>
 					</div>
 				</section>
 			</div>
 		</main>
 		<script src="assets/script.js"></script>
+		<script>
+			window.onload = function() {
+				loadLPList();
+			};
+		</script>
 	</body>
 
 </html>
