@@ -1,3 +1,5 @@
+// accordion script
+
 function accordion(value,id){
 	// her skal skrives en function, der får accordions til at expand/collapse
 	var buttonDisplay = id;
@@ -46,4 +48,16 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+////////// infobox script
+
+function infobox(event) {
+	var targetTitle = event.target.title;
+	var newInfobox = document.createElement("div");
+	var newInfoboxText = document.createTextNode(targetTitle);
+    newInfobox.appendChild("<h2>" + newInfoboxText + "</h2><p>Derp.</p>");
+    newInfobox.className = "infobox";
+    document.body.appendChild(newInfobox);
+    //alert(targetTitle);
 }

@@ -5,6 +5,31 @@
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
+
+<!--- function for Event Creator -->
+    <script language="JavaScript">
+    function testResults (form) {
+        TestVar =  (form.eventname.value)
+        if (TestVar == "School") {
+            (window.confirm("Congratulations! you just created a new event! Return to profile?"))
+          window.location.href = "profile.html";
+          } else
+            alert ("Oooops! Something went wrong! Try again!");
+    }
+
+    function isNumberString (InString)  {
+        if(InString.length==0) return (false);
+        var RefString="1234567890";
+        for (Count=0; Count < InString.length; Count++)  {
+            TempChar= InString.substring (Count, Count+1);
+            if (RefString.indexOf (TempChar, 0)==-1)
+                return (false);
+        }
+        return (true);
+    }
+
+    </script>
+
 	</head>
 
 	<body>
@@ -25,23 +50,32 @@
 					</tr>
 				</table>
 			</div>
-<!--DROPDOWN !! skal laves om -->
-					<div class="dropdown" style="float:right;">
-		  			<button class="dropbtn">Right</button>
-						  <div class="dropdown-content">
-						    <a href="myschool.html">MySchool</a>
-						    <a href="lessonplans.html">Lesson Plans</a>
-						    <a href="login.html">Log out</a>
-						  </div>
-					</div>
+      <!--DROPDOWN !! skal laves om -->
+                <div class="dropdown" style="float:right;">
+                  <button class="dropbtn">Right</button>
+                    <div class="dropdown-content">
+                      <a href="profile.html">MyProfile</a>
+                      <a href="myschool.html">MySchool</a>
+                      <a href="lessonplans.html">Lesson Plans</a>
+                      <a href="events.html">Events</a>
+                      <a href="news.html">News</a>
+                      <a href="login.html">Log out</a>
+                    </div>
+                </div>
 		</nav>
 		<header>
-			<h1 class="webtitle">KEDU - EVENTS</h1>
+			<h1 class="webtitle">EVENTS</h1>
 		</header>
 		<main>
 <!-- 		Page content 		-->
 
+
 <div>
+  <section>
+    <div>
+      <h2>Ucomming events</h2>
+    </div>
+  </secion>
   <section>
     <ul>
       <li>
@@ -72,76 +106,49 @@
 
 
 
-<div>
-          <div>
-            <form id="myEvent" method="post" name=event>
-                      <div>
-                        <input type="text" placeholder="Event name" name="userid"><br>
-                        <input type="date" name="date" placeholder="Date" id="date" alt="Date">
-                        <input type="month" name="month" placeholder="Month" id="month" alt="Month">
-                        <input type="year" name="year" placeholder="Year" id="year" alt="year"><br>
-                      <!--  <input type="time" name="time" placeholder"Time" id="time" alt="Time"><br>   VIRKER IKKE--->
-                        <textarea placeholder"Type event details here" id="msg" name="event_info"></textarea>
-                        <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
-                        <button type="button" onclick="check(this.form)" value="event" class="loginBtn">Create Event!</button><br>
-                      </div>
+<!--- EVENT CREATOR --->
+          <div class="flexcontainer">
+                <div>
+                      <section>
+                        <div>
+                          <h2>Want to create your own event?</h2>
+                            <h3>Try the new EventCreator!</h3>
+                            <p>The new EventCreator tool was succesfully created by young minds to enable teachers(...)</p>
+                        </div>
+                      </secion>
+                </div>
+                <div>
+                      <section>
+                                <div class="container">
+                                   <form name="myevent" id="myEvent">
+                                       <h1>EventCreator</h1>
+                                       <input type="text" placeholder="Event name" name="eventname" value="Event name" required><br>
+                                       <input type="date" name="date" placeholder="DD/MM/YY" id="date" alt="Date" value="DD/MM/YY" required><br>
+                                       <textarea placeholder="Type event details here" id="msg" name="eventinfo"></textarea><br>
+                                       <label for="host"l>Who is hosting?</label><br>
+                                       <input type="text" placeholder="Teacher name" name="host">
+                                       <input type="text" placeholder="Teacher name" name="host">
+                                       <input type="text" placeholder="Teacher name" name="host"><br>
+                                       <label for="file">Upload pictures</label><br>
+                                       <input type="file" name="file" id="file" accept="image/*" multiple alt="event pictures"><br>
+                                       <input type="button" name="button" value="Create Event" onClick="testResults(this.form)" class="loginBtn">
+                                   </form>
+                                   </div>
+                      </section>
+              </div>
           </div>
-</div>
-
       </li>
     </ul>
 
   </section>
 </div>
+</div>
 <!-- 		Sidebar 		-->
-			<aside>
-				<div>
-					<h2>Welcome, John</h2>
-					<div class="divider"></div>
-					<h3><span class="left">Top lesson plans</span></h3>
-					<h4><span class="right">April</span></h4><br>
-
-					<div class="lessonPlanImg"> </div>
-					<div class="lessonPlanBtn"><a href="">VIEW LESSON PLAN</a></div>
-
-					<div class="lessonPlanImg"> </div>
-					<div class="lessonPlanBtn"><a href="">VIEW LESSON PLAN</a></div>
-
-					<div class="lessonPlanImg"> </div>
-					<div class="lessonPlanBtn"><a href="">VIEW LESSON PLAN</a></div>
-					<div class="divider"></div>
-					<h3><span class="left">Most active schools</span></h3>
-					<h4><span class="right">April</span></h4>
-					<table>
-						<tr>
-							<th>Rudehøjbøgskolen</th><td>5672KP</td>
-						</tr>
-						<tr>
-							<th>ITX Herning</th><td>4728KP</td>
-						</tr>
-						<tr>
-							<th>Vesterhaven</th><td>3652KP</td>
-						</tr>
-					</table>
-					<div class="divider"></div>
-
-				</div>
-			</aside>
+    <aside>
+      <p>Sidebar content</p>
+    </aside>
 		</main>
 		<script src="assets/script.js"></script>
-    <script>
-    // function for Event Creator
-
-    function check(form){
-    	if(form.userid.value == "School" && form.date.value =="12" && form.month.value =="12" /*&& form.time.value =="12.12"*/ && form.time.value =="2018")
-    	{
-    		alert("You have created a new event!")
-    	}
-    	else {
-    		alert("Ooooooops!Something went wrong, try again")
-    	}
-    }
-    </script>
 	</body>
 
 </html>
