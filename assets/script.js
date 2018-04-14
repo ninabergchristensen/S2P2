@@ -131,7 +131,7 @@ window.onclick = function(event) {
 ////////// infobox script /////////////////////////////////////////////////////////////////////////////
 
 function infobox(event) {
-	var targetTitle = event.target.title;
+	var targetObject = event.target;
 	var newInfobox = document.createElement("div");
 <<<<<<< HEAD
 	var newInfoboxText = document.createTextNode(targetTitle);
