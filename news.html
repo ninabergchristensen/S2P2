@@ -14,16 +14,15 @@
         document.getElementById("para").innerHTML += text;
       }
 			// JS FOR POST Blog
-
-			<script language="JavaScript">
-			function testResults (form) {
-					TestVar =  (form.posttitle.value)
-					if (TestVar == "School") {
-							(window.confirm("Congratulations! You just created your first Blog Post! Return to News?"))
-						window.location.href = "news.html";
-						} else
-							alert ("Oooops! Something went wrong! Try again!");
-			}
+			
+		function testResults() {
+				var TestVar =  document.getElementById("posttitle").value;
+				if (TestVar == "School") {
+						(window.confirm("Congratulations! You just created your first Blog Post! Return to News?"))
+					window.location.href = "news.html";
+					} else
+						alert ("Oooops! Something went wrong! Try again!");
+		}
 
 
       </script>
@@ -205,7 +204,7 @@
 																 <textarea placeholder="Type text here" id="post" name="eventinfo" rows="20" cols="44"></textarea><br>
 																 <p>Add LessonPlan(s):</p>
 																 <input type="file" name="file" id="file" accept="image/*" multiple alt="lesson plas"><br><br>
-																 <input type="button" name="button" value="Submit Post" onClick="myPost" class="loginBtn">
+																 <input type="button" name="button" value="Submit Post" onClick="testResults()" class="loginBtn">
 															</form>
 														 </div>
 												 </div>
