@@ -127,6 +127,7 @@ main {
 	margin: 0px auto;
 	display: flex;
 	flex-flow: row nowrap;
+	min-height: 100vh;
 }
 
 main.blue {
@@ -151,6 +152,13 @@ section {
 
 section div {
 	width: 100%;
+	border-radius: 4px;
+}
+
+.bluebox {
+	background: #268dbd;
+	padding: 0px 15px;
+	min-height: 150px;
 }
 
 /*-------------------------
@@ -159,7 +167,7 @@ section div {
 
 aside {
 	width: 250px;
-	height: 100vh;
+	height: 100%;
 	max-width: 100%;
 	background: #268dbd;
 	padding: 15px 15px;
@@ -176,13 +184,13 @@ aside h3, aside h4 {
 	font-family: 'Cabin Sketch';
 }
 
-div.divider {
+/*div.divider {
 	height: 15px;
 	width: 280px;
 	margin-top: 15px;
 	margin-left: -15px;
 	background: white;
-}
+}*/
 
 div.lessonPlanImg {
 	margin-top: 10px;
@@ -670,22 +678,33 @@ span.psw {
 /*-------------------------
 News
  ------------------------*/
+.news {
+	padding: 20px;
+	background-color: rgba(0,0,0,0.08);
 
+}
+
+.blogcont {
+	padding: 20px;
+}
+
+
+/* Blog posts */
  .blogpost {
      float: left;
-     width: 75%;
+     width: 100%;
  }
 
- .fakeimg {
-     background-color: #aaa;
-     width: 100%;
-     padding: 20px;
+ .blogtitle {
+		font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+		font-size: 10px;
  }
 
  .card {
       background-color: white;
       padding: 20px;
-      margin-top: 20px;
+			margin-bottom: 20px;
 			border: 0.01px #f2f2f2 solid;
     	box-shadow: 5px 10px 8px #888888;
  }
@@ -694,6 +713,41 @@ News
      content: "";
      display: table;
      clear: both;
+ }
+
+ .blog {
+	 margin-top: 40px;
+	 margin-bottom: 40px;
+ }
+
+ /* post blog */
+
+ .postblog {
+		 float: left;
+		 width: 95%;
+		 background-color: #226390;
+		 margin-top: 20px;
+ }
+
+.bt {
+	text-align: center;;
+	color: #f1f1f1;
+	margin-top: 30px;
+}
+
+ .tool {
+		background-color: white;
+		padding: 20px;
+		margin-top: 20px;
+		margin: auto;
+    width: 70%;
+
+ }
+
+ .blogtool:after {
+		 content: "";
+		 display: table;
+		 clear: both;
  }
 /*-------------------------
  Type

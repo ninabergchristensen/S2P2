@@ -13,6 +13,18 @@
         var text = words.value;
         document.getElementById("para").innerHTML += text;
       }
+			// JS FOR POST Blog
+			
+		function testResults() {
+				var TestVar =  document.getElementById("posttitle").value;
+				if (TestVar == "School") {
+						(window.confirm("Congratulations! You just created your first Blog Post! Return to News?"))
+					window.location.href = "news.html";
+					} else
+						alert ("Oooops! Something went wrong! Try again!");
+		}
+
+
       </script>
 
 	</head>
@@ -53,68 +65,86 @@
 		</header>
 		<main>
 <!-- 		Page content 		-->
+<div class="flexcontainer">
+<!-- 		NEWS content 		-->
 
 
+<div class="flexcontainer">
+	<div>
+<div class="news" class="newsstyle">
+			<ul>
+				<li>
+					<div class="flexcontainer">
 
-      <div>
-				<section>
+								<div>
+											<div>
+													<h2>KEDU News</h2>
+													<p>Get the latest KEDU News right here!</p>
+											</div>
+									</div>
 
-<!-- 		News segment		-->
-          <ul>
-						<li>
-							<div class="flexcontainer">
 								<div>
 									<div class="articleimgDashboard">
-										<div class="articleimgHeader">
-											<img src="assets/img/tag_news.png"><p>Lorem ipsum dolor sit amet</p>
-										</div>
+														<div class="articleimgHeader">
+															<img src="assets/img/tag_news.png"><p>Lorem ipsum dolor sit amet</p>
+														</div>
 									</div>
 								</div>
-								<div>
-									<div class="articleimgDashboard">
-										<div class="articleimgHeader">
-											<img src="assets/img/tag_event.png"><p>Lorem ipsum dolor sit amet</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="articleimgDashboard">
-										<div class="articleimgHeader">
-											<img src="assets/img/tag_event.png"><p>Lorem ipsum dolor sit amet</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
 
-<!-- 		Blog segment		-->
-          <ul>
-            <li>
-              <div class="flexcontainer">
+
+									<div>
+										<div class="articleimgDashboard">
+															<div class="articleimgHeader">
+																<img src="assets/img/tag_news.png"><p>Lorem ipsum dolor sit amet</p>
+															</div>
+										</div>
+									</div>
+
+									<div>
+										<div class="articleimgDashboard">
+															<div class="articleimgHeader">
+																<img src="assets/img/tag_news.png"><p>Lorem ipsum dolor sit amet</p>
+															</div>
+										</div>
+									</div>
+
+									<div>
+										<div class="articleimgDashboard">
+															<div class="articleimgHeader">
+																<img src="assets/img/tag_news.png"><p>Lorem ipsum dolor sit amet</p>
+															</div>
+										</div>
+									</div>
+
+					</div>
+				</li>
+			</ul>
+</div>
+
+<!-- 		BLOG content 		-->
+		<div class="blogcont">
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
 								<div>
-                  <div class="blog">
+											<div>
+													<h2>BLOG</h2>
+													<p>Want to now what your fellow teachers<br> are up to? We do to! Find out here</p>
+											</div>
+									</div>
+
+								<div>
+									<div class="blog">
                       <div class="blogpost">
                           <div class="card">
-                            <h2>LATEST BLOGPOST</h2>
-                            <h3>Title description, Sep 2, 2017</h3>
-                            <div class="fakeimg" style="height:200px;">Image</div>
+                            <h3>LATEST BLOGPOST</h3 class="blogtitle">
+                            <h4>Title description, Sep 2, 2017</h4>
                             <p>Some text..</p>
                             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+														<a href="#"><p>Read more...</p></a>
                             <form>
-                              <textarea id="words" rows="10" cols="45">Enter comment here</textarea>
-                              <input type="button" onclick="getwords()" value="Enter" /> <br>
-                              <p id="para" class="para"></p>
-                            </form>
-                          </div>
-                          <div class="card">
-                            <h2>LATEST BLOGPOST</h2>
-                            <h3>Title description, Sep 2, 2017</h3>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            <form>
-                              <textarea id="words" rows="10" cols="45">Enter comment here</textarea>
+                              <textarea id="words" rows="10" cols="25">Enter comment here</textarea>
                               <input type="button" onclick="getwords()" value="Enter" /> <br>
                               <p id="para" class="para"></p>
                             </form>
@@ -123,22 +153,84 @@
                   </div>
 								</div>
 
-                <div>
-                      <div>
-                      <h2>Join the conversation!</h2>
-                        <h3>Create your own blogpost here</h3>
-                      </div>
+
+								<div>
+									<div class="blog">
+											<div class="blogpost">
+													<div class="card">
+														<h3>LATEST BLOGPOST</h3 class="blogtitle">
+														<h4>Title description, Sep 2, 2017</h4>
+														<p>Some text..</p>
+														<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+														<a href="#"><p>Read more...</p></a>
+														<form>
+															<textarea id="words" rows="10" cols="25">Enter comment here</textarea>
+															<input type="button" onclick="getwords()" value="Enter" /> <br>
+															<p id="para" class="para"></p>
+														</form>
+													</div>
+											</div>
+									</div>
+								</div>
+
+					</div>
+				</li>
+			</ul>
+			</div>
+<!-- 		Create blog post		-->
+			<div class="news">
+				<ul>
+					<li>
+						<div class="flexcontainer">
+
+									<div>
+												<div>
+														<h2>CREATE A BLOG POST</h2>
+														<p>Don't just sit back and relax!<br> Join the conversation now!</p>
+												</div>
+										</div>
+
+									<div>
+
+										<div class="blogtool">
+												 <div class="postblog">
+													 <div>
+		 												<h3 class="bt">KEDU BlogTool</h3>
+		 											</div>
+														 <div class="tool">
+															 <form method="post">
+																 <input type="text" placeholder="Post title" name="posttitle" id="posttitle" required><br>
+																 <input type="text" placeholder="Post description" name="postdes" id="postdes" required><br>
+																 <textarea placeholder="Type text here" id="post" name="eventinfo" rows="20" cols="44"></textarea><br>
+																 <p>Add LessonPlan(s):</p>
+																 <input type="file" name="file" id="file" accept="image/*" multiple alt="lesson plas"><br><br>
+																 <input type="button" name="button" value="Submit Post" onClick="testResults()" class="loginBtn">
+															</form>
+														 </div>
+												 </div>
+										 </div>
+	                  </div>
+									</div>
 
 
-                </div>
+					</li>
+				</ul>
+		</div>
 
 
+		</div>
+	</div>
 
-							</div>
-						</li>
-					</ul>
-				</section>
 </div>
+
+
+
+
+<!-- 		Page content 		-->
+
+
+
+<!-- 		Page content 		-->
     <!---    <section>
           <ul>
             <li>
@@ -158,11 +250,7 @@
           </ul>
         </section>--->
 <!-- 		Sidebar 		-->
-			<aside>
-				<div>
 
-				</div>
-			</aside>
 		</main>
 		<script src="assets/script.js"></script>
 	</body>
