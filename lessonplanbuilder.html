@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>KEDU | Lesson Builder</title>
+		<title>KEDU | Lesson Plan Builder</title>
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
@@ -42,60 +42,44 @@
 <!-- 		Page content 		-->
 			<div>
 				<section>
-					<div class="flexcontainer">
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>NEWS: Lorem ipsum dolor sit amet</p>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>EVENT: Lorem ipsum dolor sit amet</p>
-								</div>
-							</div>
-						</div>
+					<div>
+						<p>Build Lesson Plan:</p> 
+						<h1 onclick="renameLP" id="lpTitle">Untitled</h1>
 					</div>
-					<div class="flexcontainer">
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>EVENT: Lorem ipsum dolor sit amet</p>
+				</section>
+				<section>
+					<div>
+						<form>
+							<h2>Settings</h2>
+							<div class="flexcontainer">
+								<div>
+									<h3>Subject</h3>
+									<select>
+										<option>Coding</option>
+										<option>Math</option>
+										<option>Language/spelling</option>
+									</select>
+								</div>
+								<div>
+									<h3>Difficulty</h3>
+									<select>
+										<option>Beginner (approx. age 4 – 5)</option>
+										<option>Novice (approx. age 5 – 7)</option>
+										<option>Intermediate (approx. age 6 - 8)</option>
+										<option>Advanced (approx. age 8 – 10)</option>
+									</select>
+								</div>
+								<div>
+									<h3>Photo</h3>
+									<a href="#" class="blueButtonLink">Choose from the KUBO Photo Library</a>
+									<a href="#" class="blueButtonLink">Upload</a>
+								</div>
+								<div>
+									<h3>Description</h3>
+									<textarea id="lpDescriptionBox"></textarea>
 								</div>
 							</div>
-						</div>
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>NEWS: Lorem ipsum dolor sit amet</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="flexcontainer">
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>NEWS: Lorem ipsum dolor sit amet</p>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>EVENT: Lorem ipsum dolor sit amet</p>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="articleimgDashboard">
-								<div class="articleimgHeader">
-									<p>EVENT: Lorem ipsum dolor sit amet</p>
-								</div>
-							</div>
-						</div>
+						</form>
 					</div>
 				</section>
 			</div>

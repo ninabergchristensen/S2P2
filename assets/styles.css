@@ -161,6 +161,51 @@ section div {
 	min-height: 150px;
 }
 
+.palebluebox {
+	background: #e1eff4;
+	padding: 0px 15px;
+	min-height: 150px;
+}
+
+/*-------------------------
+ Buttons
+ ------------------------*/
+
+.ctaButtonLink, .blueButtonLink, .redButtonLink {
+	display: block;
+	padding: 10px 15px;
+	min-width: 100px;
+	color: #fff;
+	border-radius: 4px;
+	margin: 25px 15px 15px 0px;
+	text-align: center;
+}
+
+.ctaButtonLink {
+	background: #6ebe56;
+	/*padding: 15px 20px;*/
+}
+
+.ctaButtonLink:hover {
+	background: #00a39b;
+}
+
+.blueButtonLink {
+	background: #268dbd;
+}
+
+.blueButtonLink:hover {
+	background: #226390;
+}
+
+.redButtonLink {
+	background: #268dbd;
+}
+
+.redButtonLink:hover {
+	background: #226390;
+}
+
 /*-------------------------
  Sidebar
  ------------------------*/
@@ -687,6 +732,15 @@ span.psw {
         width: 100%;
     }
 }
+
+/*-------------------------
+Login
+ ------------------------*/
+
+ #lpTitle {
+ 	text-align: left;
+ 	margin: 0px;
+ }
 
 /*-------------------------
 News
