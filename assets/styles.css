@@ -172,6 +172,7 @@ section div {
  ------------------------*/
 
 .ctaButtonLink, .blueButtonLink, .redButtonLink {
+	display: block;
 	padding: 10px 15px;
 	min-width: 100px;
 	color: #fff;
