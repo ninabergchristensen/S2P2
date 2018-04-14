@@ -437,6 +437,7 @@ dropdown
 	flex-grow: 6 !important;
 }
 
+
 /*-------------------------
  Article / feed
  ------------------------*/
@@ -672,27 +673,40 @@ input[type=text], input[type=password] {
     padding: 10px 18px;
 }
 
-/* Center the avatar image inside this container */
+
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
+		width:100%;
+    position: absolute;
+    bottom:0;
 }
 
-/* Avatar image */
+
 img.avatar {
-    width: 25%;
+	position: relative;
+	display: block;
+	float: none;
+	margin-left: 140px;
+	width: 20%;
+
 }
 
 /* Add padding to containers */
 .container {
     padding: 30px;
 		margin: 10px;
+		z-index: 3;
 }
 
 /* The "Forgot password" text */
 span.psw {
     float: right;
     padding-top: 10px;
+}
+
+.email {
+	width: 100%;
 }
 
 /* the info text about KEDU */
@@ -854,9 +868,25 @@ h1 {
 .schoolnameHeader {
 	font-family: 'Cabin Sketch';
 	font-size: 30px;
+	text-align: center;
+	color: #268dbd;
 }
 
 .latestpostHeader {
 		font-family: 'Cabin Sketch';
 		font-size: 30px;
+		text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.flex-container > div {
+  width: 70px;
+  margin: 20px;
+  text-align: right;
+  font-size: 30px;
 }

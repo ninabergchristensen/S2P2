@@ -98,7 +98,7 @@ function accordion(value,id){
 // function til login /////////////////////////////////////////////////////////////////////////////
 function check(form)
 {
-  if(form.userid.value == "John" && form.pswrd.value == "123")
+  if(form.userid.value == "john@doe.com" && form.pswrd.value == "123")
   {
     window.open('index.html')
   }

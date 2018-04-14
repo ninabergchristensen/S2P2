@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>KEDU | Profile</title>
+		<title>KEDU | Login</title>
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
@@ -26,13 +26,13 @@
 
 
   <div class="container">
-    <form name="login">
+    <form name="login" _self>
       <div class="login">
-        <input type="text" placeholder="username" name="userid"><br>
-        <input type="password" placeholder="password" name="pswrd"><br>
+        <input type="text" placeholder="john@doe.com" name="userid"><br>
+        <input type="password" placeholder="123" name="pswrd"><br>
         <button type="button" onclick="check(this.form)" value="Login" class="loginBtn">Login</button><br>
-        <p class="psw">Forgot <a href="#">password?</a></p>
-        <p class="psw">Create <a href="#">new user</a></p>
+        <p class="psw">Forgot <a href="forgotpswrd.html">password?</a></p>
+        <p class="psw">Create <a href="createuser.html">new user</a></p>
       </div>
     </form>
   </div>
