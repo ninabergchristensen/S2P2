@@ -629,27 +629,40 @@ input[type=text], input[type=password] {
     padding: 10px 18px;
 }
 
-/* Center the avatar image inside this container */
+
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
+		width:100%;
+    position: absolute;
+    bottom:0;
 }
 
-/* Avatar image */
+
 img.avatar {
-    width: 25%;
+	position: relative;
+	display: block;
+	float: none;
+	margin-left: 140px;
+	width: 20%;
+
 }
 
 /* Add padding to containers */
 .container {
     padding: 30px;
 		margin: 10px;
+		z-index: 3;
 }
 
 /* The "Forgot password" text */
 span.psw {
     float: right;
     padding-top: 10px;
+}
+
+.email {
+	width: 100%;
 }
 
 /* the info text about KEDU */
