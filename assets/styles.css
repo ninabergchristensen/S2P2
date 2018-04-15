@@ -172,6 +172,24 @@ section>div {
 	min-height: 150px;
 }
 
+.paleblueboxDashboard {
+	background: #e1eff4;
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 15px;
+	padding-bottom: 0;
+	min-height: 150px;
+}
+
+.paleblueboxDashboard h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 50px;
+	font-weight: 400;
+	color: #226390;
+
+}
+
 /*-------------------------
  Buttons
  ------------------------*/
@@ -242,6 +260,10 @@ aside h3, aside h4 {
 	background: white;
 }*/
 
+div.extender {
+	height: 55vh;
+}
+
 div.lessonPlanImg {
 	margin-top: 10px;
 	height: 100px;
@@ -291,6 +313,12 @@ aside th {
 	text-align: left;
 }
 
+aside img {
+	margin-top: 15px;
+	margin-left: 10px;
+	width: 200px;
+	opacity: 0.7;
+}
 /*-------------------------
  Nav
  ------------------------*/
@@ -430,8 +458,7 @@ dropdown
 	justify-content: space-between;
 	flex-flow: row wrap;
 	align-content: stretch;
-	/*margin: 0px -15px;*/
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
 
 .flexcontainer>div {
@@ -469,7 +496,7 @@ dropdown
 	background-size: cover;
 	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 
 .articleimgDashboard:hover {
