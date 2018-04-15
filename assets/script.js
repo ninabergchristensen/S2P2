@@ -150,35 +150,39 @@ function clearInfobox(event) {
 
 ////// Lesson Builder Script ////////
 
-function saveLessonPlan() {
-	var lpID;
-	var lpTitle;
-	var lpDateCreated;
-	var lpSubject;
-	var lpDescription;
-	var lpDifficulty;
-	var lpLessonIDs;
-}/**/
+//localStorage.clear();
 
-function createLessonPlan() {
-
-}/**/
-
-function loadLPList() {
-	var myLPs = localStorage.getItem("myLPList");
-	//alert(myLPs);
-
-	if (myLPs == null) {
-		var listText = "<p>You have not created any Lesson Plans.</p>";
-		document.getElementById("myLPListholder").innerHTML = listText;
-		//alert("derp")
-	} else {
-		var lpListString = localStorage.getItem('lpData');
-		lpData = JSON.parse(notesString);
-		var listHTML = "";
-		for(var i=0;i<lpData.length;i++) {
-			listHTML +=  '<div class="bluebox" onclick="editThisLP('+i+')"> ' + lpData[i][1] + ' &ndash; ' + lpData[i][2] + ' </div>';
-		}
-		document.getElementById("myLPListholder").innerHTML = ListHTML;
+function createLP() {
+	var createdDate = new Date();
+	createdDate = createdDate.getDate() + '/' + (createdDate.getMonth()+1) + '/' + createdDate.getFullYear();
+	var LessonPlanString = localStorage.getItem("LessonPlan");
+	var nextID = "0";
+	var LessonPlanArray = [];
+	if (LessonPlanString != null) {
+		LessonPlanArray = JSON.parse(LessonPlanString);
+		nextID = LessonPlanArray.length+1;
 	}
+	var newLessonPlan = [nextID, createdDate, "Untitled", "", "", []];
+	LessonPlanArray.push(newLessonPlan);
+	var LessonPlanArrayString = JSON.stringify(LessonPlanArray);
+	localStorage.setItem('LessonPlan',LessonPlanArrayString);
+	console.log(LessonPlanArrayString);
+	showLessonPlans();
+}
+
+function showLessonPlans() {
+	var LessonPlanArray = [];
+	var LessonPlanString = localStorage.getItem('LessonPlan');
+	var LessonPlanList = "";
+	console.log(LessonPlanString);
+	if(LessonPlanString != null) {
+		LessonPlanArray = JSON.parse(LessonPlanString);
+		for(var i=0;i<LessonPlanArray.length;i++) {
+			LessonPlanList +=  '<li> ' + LessonPlanArray[i][1] + ' &ndash; ' + LessonPlanArray[i][2] + ' </li>';
+		}
+	} else {
+		LessonPlanList = "You have no custom Lesson Plans.";
+	}
+	console.log(LessonPlanList);
+	document.getElementById("myLPListholder").innerHTML = LessonPlanList;
 }

@@ -1051,6 +1051,10 @@ form {
  Lesson Plan Builder
  ------------------------*/
 
+#myLPListHolder div {
+	padding: 15px;
+}
+
 #lessonlistcontainer {
 	overflow-x: scroll;
 	white-space: nowrap;
