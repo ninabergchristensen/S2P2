@@ -141,6 +141,7 @@ main.white {
 main>div {
 	flex-grow: 3;
 	margin-top: 20px;
+	max-width: 100%;
 }
 
 section {
@@ -153,6 +154,10 @@ section {
 section div {
 	width: 100%;
 	border-radius: 4px;
+}
+
+section>div {
+	padding-bottom: 15px;
 }
 
 .bluebox {
@@ -199,11 +204,11 @@ section div {
 }
 
 .redButtonLink {
-	background: #268dbd;
+	background: #db3d2e;
 }
 
 .redButtonLink:hover {
-	background: #226390;
+	background: #fb8c3e;
 }
 
 /*-------------------------
@@ -426,6 +431,7 @@ dropdown
 	flex-flow: row wrap;
 	align-content: stretch;
 	/*margin: 0px -15px;*/
+	padding-bottom: 15px;
 }
 
 .flexcontainer>div {
@@ -443,6 +449,9 @@ dropdown
 	flex-grow: 6 !important;
 }
 
+.flexfromright {
+	justify-content: flex-end;
+}
 
 /*-------------------------
  Article / feed
@@ -797,15 +806,6 @@ span.psw {
 }
 
 /*-------------------------
-Login
- ------------------------*/
-
- #lpTitle {
- 	text-align: left;
- 	margin: 0px;
- }
-
-/*-------------------------
 News
  ------------------------*/
 .news {
@@ -904,9 +904,54 @@ textarea, #post {
  ------------------------*/
 
 #lessonlistcontainer {
-	overflow-y: scroll;
-	overflow: hidden;
+	overflow-x: scroll;
+	white-space: nowrap;
+	height: 225px;
+	padding: 15px 15px;
+	width: 100% /*1270px*/;
 }
+
+.lessonlistblock {
+	height: 175px;
+	width: 175px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.lessonlistblock a {
+	display: block;
+	line-height: 175px;
+	width: 175;
+	background: #268dbd;
+	border: 4px solid #268dbd;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.lessonlistblock a:hover {
+	border: 4px solid #aaa;
+}
+
+.addlesson a {
+	background: #f1f1f2;
+	border: 4px solid #6ebe56;
+	color: #6ebe56;
+}
+
+.addlesson a:hover{
+	border: 4px solid #00a39b;
+	color: #00a39b;
+}
+
+#lpTitle {
+ 	text-align: left;
+ 	margin: 0px;
+ }
+
+ #lpDescriptionBox {
+ 	height: 300px;
+ }
 
 /*-------------------------
  Style Guide page styles
@@ -936,6 +981,12 @@ textarea, #post {
 
 	nav ul {
 		display: none;
+	}
+
+	.flexcontainer>div {
+		margin-right: 0px;
+		flex-grow: 1;
+		flex-basis: 100%;
 	}
 }
 

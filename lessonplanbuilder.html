@@ -50,6 +50,7 @@
 				<section>
 					<div>
 						<h2>Settings</h2>
+						<p>Change the main settings of the Lesson Plan.</p>
 						<div class="flexcontainer palebluebox">
 							<div>
 								<h3>Subject</h3>
@@ -58,8 +59,6 @@
 									<option>Math</option>
 									<option>Language/spelling</option>
 								</select>
-							</div>
-							<div>
 								<h3>Difficulty</h3>
 								<select>
 									<option>Beginner (approx. age 4 – 5)</option>
@@ -69,13 +68,14 @@
 								</select>
 							</div>
 							<div>
-								<h3>Photo</h3>
-								<a href="#" class="blueButtonLink">Choose from the KUBO Photo Library</a>
-								<a href="#" class="blueButtonLink">Upload</a>
-							</div>
-							<div>
 								<h3>Description</h3>
 								<textarea id="lpDescriptionBox"></textarea>
+							</div>
+							<div>
+								<h3>Photo</h3>
+								<div class="articleimgDashboard"></div>
+								<a href="#" class="blueButtonLink">Choose from the KUBO Photo Library</a>
+								<a href="#" class="blueButtonLink">Upload</a>
 							</div>
 						</div>
 					</div>
@@ -84,14 +84,23 @@
 					<div>
 						<div>
 							<h2>Lessons</h2>
-							<p>Add, edit, reorder and remove Lessons from the Lesson Plan</p>
+							<p>Add, edit, reorder and remove Lessons from the Lesson Plan.</p>
 							<div class="palebluebox" id="lessonlistcontainer">
-								<div class="lessonblock"></div>
+								<div class="lessonlistblock addlesson"><a href="#">Add Lesson</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 1</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 2</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 3</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 4</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 5</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 6</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 7</a></div>
 							</div>
 						</div>
 					</div>
-					<div class="flexcontainer">
-						<a href="mylessonplans.html" class="ctaButtonLink">Save and return to My Lesson Plans</a>
+					<div class="flexcontainer flexfromright">
+						<a href="mylessonplans.html" class="redButtonLink">Don't save</a>
+						<a href="mylessonplans.html" class="blueButtonLink">Save</a>
+						<a href="mylessonplans.html" class="blueButtonLink">Save and return to My Lesson Plans</a>
 					</div>
 				</section>
 			</div>
