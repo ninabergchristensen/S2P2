@@ -177,7 +177,7 @@ function loadLPList() {
 		lpData = JSON.parse(notesString);
 		var listHTML = "";
 		for(var i=0;i<lpData.length;i++) {
-			listHTML +=  '<div class="bluebox" onclick="editThisLP('+i+')"> ' + lpData[i][1] + ' &ndash; ' + lpData[i][2] + ' </div>';	
+			listHTML +=  '<div class="bluebox" onclick="editThisLP('+i+')"> ' + lpData[i][1] + ' &ndash; ' + lpData[i][2] + ' </div>';
 		}
 		document.getElementById("myLPListholder").innerHTML = ListHTML;
 	}
