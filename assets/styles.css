@@ -604,6 +604,49 @@ Helpdesk, feed, web and badges
  	opacity: 1;
  }
 
+ /*-------------------------
+  Event
+  ------------------------*/
+
+	.event {
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	    transition: 0.3s;
+	    width: 100%;
+			opacity: 0.8;
+			padding: 5px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+
+	}
+
+	.event:hover {
+	    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+			transform: scale(1.05);
+			z-index: 5;
+	}
+
+	.eventcontainer {
+    padding: 4px 16px;
+		background-color: #268dbd;
+}
+
+.userevent {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		width: 100%;
+		opacity: 0.8;
+		padding: 5px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+}
+
+.userevent:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		transform: scale(1.05);
+		z-index: 5;
+}
+
+
 /*-------------------------
  Badges
  ------------------------*/
@@ -814,6 +857,12 @@ News
 
 }
 
+.newssec {
+	padding: 20px;
+	background-color: rgba(0,0,0,0.0);
+
+}
+
 .blogcont {
 	padding: 20px;
 }
@@ -835,6 +884,7 @@ News
       background-color: white;
       padding: 20px;
 			margin-bottom: 20px;
+
 			border: 2.5px #f2f2f2 solid;
 
  }
@@ -857,6 +907,8 @@ News
 		 width: 95%;
 		 background-color: #226390;
 		 margin-top: 20px;
+		 border: 2.5px #f2f2f2 solid;
+
  }
 
 .bt {
@@ -897,6 +949,10 @@ h1 {
 
 textarea, #post {
 	width: 100%;
+}
+
+form {
+	padding: 5px;
 }
 
 /*-------------------------
