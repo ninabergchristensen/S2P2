@@ -54,13 +54,14 @@
 						<div class="flexcontainer palebluebox">
 							<div>
 								<h3>Subject</h3>
-								<select>
+								<select id="lpSubjectSelector">
 									<option>Coding</option>
 									<option>Math</option>
 									<option>Language/spelling</option>
+									<option>Just for fun</option>
 								</select>
 								<h3>Difficulty</h3>
-								<select>
+								<select id="lpDifficultySelector">
 									<option>Beginner (approx. age 4 – 5)</option>
 									<option>Novice (approx. age 5 – 7)</option>
 									<option>Intermediate (approx. age 6 - 8)</option>
@@ -99,13 +100,14 @@
 					</div>
 					<div class="flexcontainer flexfromright">
 						<a href="mylessonplans.html" class="redButtonLink">Don't save</a>
-						<a href="mylessonplans.html" class="blueButtonLink">Save</a>
-						<a href="mylessonplans.html" class="blueButtonLink">Save and return to My Lesson Plans</a>
+						<a href="#" class="blueButtonLink">Save</a>
+						<a href="mylessonplans.html" class="blueButtonLink" onclick="saveLP()">Save and return to My Lesson Plans</a>
 					</div>
 				</section>
 			</div>
 		</main>
 		<script src="assets/script.js"></script>
+		<script>loadLP();</script>
 	</body>
 
 </html>
