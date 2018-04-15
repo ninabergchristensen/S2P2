@@ -150,13 +150,35 @@ function clearInfobox(event) {
 
 ////// Lesson Builder Script ////////
 
-/*function loadLPList() {
+function saveLessonPlan() {
+	var lpID;
+	var lpTitle;
+	var lpDateCreated;
+	var lpSubject;
+	var lpDescription;
+	var lpDifficulty;
+	var lpLessonIDs;
+}/**/
+
+function createLessonPlan() {
+
+}/**/
+
+function loadLPList() {
 	var myLPs = localStorage.getItem("myLPList");
-	alert("werk");
+	//alert(myLPs);
 
 	if (myLPs == null) {
-		var listText = "<p class="nulltext">You have not created any Lesson Plans.</p>"
+		var listText = "<p>You have not created any Lesson Plans.</p>";
 		document.getElementById("myLPListholder").innerHTML = listText;
-		alert("derp");
+		//alert("derp")
+	} else {
+		var lpListString = localStorage.getItem('lpData');
+		lpData = JSON.parse(notesString);
+		var listHTML = "";
+		for(var i=0;i<lpData.length;i++) {
+			listHTML +=  '<div class="bluebox" onclick="editThisLP('+i+')"> ' + lpData[i][1] + ' &ndash; ' + lpData[i][2] + ' </div>';	
+		}
+		document.getElementById("myLPListholder").innerHTML = ListHTML;
 	}
-}*/
+}

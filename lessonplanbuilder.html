@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KEDU | Lesson Plan Builder</title>
+		<meta charset="UTF-8">
+		<link href="assets/styles.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
+	</head>
+
+	<body>
+		<nav>
+			<a href="index.html"><img id="topNavLogo" src="assets/img/KEDUlogo.png" alt="KEDU Logo"></a>
+			<ul>
+				<li><a class="active" href="index.html">Dashboard</a></li>
+				<li><a href="lessonplans.html">Lesson Plans</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<div id="usernav">
+				<table>
+					<tr>
+						<td><a href="#">John Doe</a></td> <th rowspan="2"><a href="#"><img src="assets/img/profiletag.png" alt="My School Name"></a></th>
+					</tr>
+					<tr>
+						<td id="topAlign"><a href="#">1366 KP</a>
+					</tr>
+				</table>
+			</div>
+			<!--DROPDOWN !! skal laves om -->
+								<div class="dropdown" style="float:right;">
+									<button class="dropbtn">Right</button>
+										<div class="dropdown-content">
+											<a href="profile.html">MyProfile</a>
+											<a href="myschool.html">MySchool</a>
+											<a href="lessonplans.html">Lesson Plans</a>
+											<a href="events.html">Events</a>
+											<a href="news.html">News</a>
+											<a href="login.html">Log out</a>
+										</div>
+								</div>
+		</nav>
+		<main>
+<!-- 		Page content 		-->
+			<div>
+				<section>
+					<div>
+						<p>Build Lesson Plan:</p> 
+						<h1 onclick="renameLP" id="lpTitle">Untitled</h1>
+					</div>
+				</section>
+				<section>
+					<div>
+						<h2>Settings</h2>
+						<p>Change the main settings of the Lesson Plan.</p>
+						<div class="flexcontainer palebluebox">
+							<div>
+								<h3>Subject</h3>
+								<select>
+									<option>Coding</option>
+									<option>Math</option>
+									<option>Language/spelling</option>
+								</select>
+								<h3>Difficulty</h3>
+								<select>
+									<option>Beginner (approx. age 4 – 5)</option>
+									<option>Novice (approx. age 5 – 7)</option>
+									<option>Intermediate (approx. age 6 - 8)</option>
+									<option>Advanced (approx. age 8 – 10)</option>
+								</select>
+							</div>
+							<div>
+								<h3>Description</h3>
+								<textarea id="lpDescriptionBox"></textarea>
+							</div>
+							<div>
+								<h3>Photo</h3>
+								<div class="articleimgDashboard"></div>
+								<a href="#" class="blueButtonLink">Choose from the KUBO Photo Library</a>
+								<a href="#" class="blueButtonLink">Upload</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<div>
+							<h2>Lessons</h2>
+							<p>Add, edit, reorder and remove Lessons from the Lesson Plan.</p>
+							<div class="palebluebox" id="lessonlistcontainer">
+								<div class="lessonlistblock addlesson"><a href="#">Add Lesson</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 1</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 2</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 3</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 4</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 5</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 6</a></div>
+								<div class="lessonlistblock"><a href="#">Lesson 7</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="flexcontainer flexfromright">
+						<a href="mylessonplans.html" class="redButtonLink">Don't save</a>
+						<a href="mylessonplans.html" class="blueButtonLink">Save</a>
+						<a href="mylessonplans.html" class="blueButtonLink">Save and return to My Lesson Plans</a>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="assets/script.js"></script>
+	</body>
+
+</html>

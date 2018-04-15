@@ -141,6 +141,7 @@ main.white {
 main>div {
 	flex-grow: 3;
 	margin-top: 20px;
+	max-width: 100%;
 }
 
 section {
@@ -155,10 +156,59 @@ section div {
 	border-radius: 4px;
 }
 
+section>div {
+	padding-bottom: 15px;
+}
+
 .bluebox {
 	background: #268dbd;
 	padding: 0px 15px;
 	min-height: 150px;
+}
+
+.palebluebox {
+	background: #e1eff4;
+	padding: 0px 15px;
+	min-height: 150px;
+}
+
+/*-------------------------
+ Buttons
+ ------------------------*/
+
+.ctaButtonLink, .blueButtonLink, .redButtonLink {
+	display: block;
+	padding: 10px 15px;
+	min-width: 100px;
+	color: #fff;
+	border-radius: 4px;
+	margin: 25px 15px 15px 0px;
+	text-align: center;
+}
+
+.ctaButtonLink {
+	background: #6ebe56;
+	/*padding: 15px 20px;*/
+}
+
+.ctaButtonLink:hover {
+	background: #00a39b;
+}
+
+.blueButtonLink {
+	background: #268dbd;
+}
+
+.blueButtonLink:hover {
+	background: #226390;
+}
+
+.redButtonLink {
+	background: #db3d2e;
+}
+
+.redButtonLink:hover {
+	background: #fb8c3e;
 }
 
 /*-------------------------
@@ -380,19 +430,28 @@ dropdown
 	justify-content: space-between;
 	flex-flow: row wrap;
 	align-content: stretch;
-	margin: 0px -15px;
+	/*margin: 0px -15px;*/
+	padding-bottom: 15px;
 }
 
 .flexcontainer>div {
-	margin: 0px 15px;
+	margin-right: 20px;
 	flex-grow: 1;
 	flex-basis: 25%;
+}
+
+.flexcontainer>div:last-child {
+	margin-right: 0px;
+	flex-grow: 1;
 }
 
 .twocolumnflexbox {
 	flex-grow: 6 !important;
 }
 
+.flexfromright {
+	justify-content: flex-end;
+}
 
 /*-------------------------
  Article / feed
@@ -457,31 +516,88 @@ dropdown
 }
 
 /*-------------------------
-Support, feed, web and badges
+Helpdesk, feed, web and badges
  ------------------------*/
+.scroll {
+	height: 250px;
+	overflow-x: hidden;
+	border: 2.5px #f2f2f2 solid;
+	padding: 2px;
+	padding-left: 25px;
+}
+
  .webtitle {
 	color: white;
 	text-align: center;
 }
 
- .articleimgSupport {
+ .articleimgLb {
  	min-height: 300px;
- 	background-image: url('img/LB-webisodes.png');
- 	opacity: 0.85;
+ 	background-image: url('img/episode1.png');
  	background-size: cover;
- 	-webkit-transition: opacity 0.1s;
  	border-radius: 4px;
- 	margin-bottom: 25px;
+ 	margin-bottom: 95px;
+	height: 90%;
+	margin-top: 10px;
+	padding: 15px;
+ }
+
+ .articleimgEc {
+	 min-height: 300px;
+	 background-image: url('img/episode2.png');
+	 background-size: cover;
+	 border-radius: 4px;
+	 margin-bottom: 95px;
+ height: 90%;
+ margin-top: 10px;
+ padding: 15px;
+ }
+
+ .articleimgRt {
+	 min-height: 300px;
+	 background-image: url('img/episode3.png');
+	 background-size: cover;
+	 border-radius: 4px;
+	 margin-bottom: 95px;
+ height: 90%;
+ margin-top: 10px;
+ padding: 15px;
+ }
+
+ .articleimgLp {
+  min-height: 400px;
+  background-image: url('img/lessonbuilder.png');
+  opacity: 0.85;
+  background-size: cover;
+  -webkit-transition: opacity 0.1s;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  bottom: 0;
  }
 
  .articleimgWeb {
- 	min-height: 600px;
- 	background-image: url('img/LB-webisodes.png');
+ 	min-height: 400px;
+ 	background-image: url('img/reviewtool.png');
  	opacity: 0.85;
  	background-size: cover;
  	-webkit-transition: opacity 0.1s;
  	border-radius: 4px;
- 	margin-bottom: 25px;
+ 	margin-bottom: 15px;
+	margin-right: 30px;
+	bottom: 0;
+ }
+
+ .articleimgEvent {
+ 	min-height: 400px;
+ 	background-image: url('img/eventcreator.png');
+ 	opacity: 0.85;
+ 	background-size: cover;
+ 	-webkit-transition: opacity 0.1s;
+ 	border-radius: 4px;
+ 	margin-bottom: 15px;
+	margin-right: 30px;
+	bottom: 0;
  }
 
  .articleimgSupport:hover {
@@ -604,7 +720,8 @@ Login
  /* Bordered form */
 form {
     border: 3px solid #f1f1f1;
-		padding: 15px;
+    border-radius: 4px;
+	padding: 15px;
 }
 
 /* Full-width inputs */
@@ -613,7 +730,7 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-		align-items: center;
+	align-items: center;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
@@ -718,8 +835,8 @@ News
       background-color: white;
       padding: 20px;
 			margin-bottom: 20px;
-			border: 0.01px #f2f2f2 solid;
-    	box-shadow: 5px 10px 8px #888888;
+			border: 2.5px #f2f2f2 solid;
+
  }
 
  .blog:after {
@@ -778,6 +895,64 @@ h1 {
 	text-align: center;
 }
 
+textarea, #post {
+	width: 100%;
+}
+
+/*-------------------------
+ Lesson Plan Builder
+ ------------------------*/
+
+#lessonlistcontainer {
+	overflow-x: scroll;
+	white-space: nowrap;
+	height: 225px;
+	padding: 15px 15px;
+	width: 100% /*1270px*/;
+}
+
+.lessonlistblock {
+	height: 175px;
+	width: 175px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.lessonlistblock a {
+	display: block;
+	line-height: 175px;
+	width: 175;
+	background: #268dbd;
+	border: 4px solid #268dbd;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.lessonlistblock a:hover {
+	border: 4px solid #aaa;
+}
+
+.addlesson a {
+	background: #f1f1f2;
+	border: 4px solid #6ebe56;
+	color: #6ebe56;
+}
+
+.addlesson a:hover{
+	border: 4px solid #00a39b;
+	color: #00a39b;
+}
+
+#lpTitle {
+ 	text-align: left;
+ 	margin: 0px;
+ }
+
+ #lpDescriptionBox {
+ 	height: 300px;
+ }
+
 /*-------------------------
  Style Guide page styles
  ------------------------*/
@@ -806,6 +981,12 @@ h1 {
 
 	nav ul {
 		display: none;
+	}
+
+	.flexcontainer>div {
+		margin-right: 0px;
+		flex-grow: 1;
+		flex-basis: 100%;
 	}
 }
 
