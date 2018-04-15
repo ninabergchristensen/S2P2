@@ -843,6 +843,15 @@ textarea, #post {
 }
 
 /*-------------------------
+ Lesson Plan Builder
+ ------------------------*/
+
+#lessonlistcontainer {
+	overflow-y: scroll;
+	overflow: hidden;
+}
+
+/*-------------------------
  Style Guide page styles
  ------------------------*/
 

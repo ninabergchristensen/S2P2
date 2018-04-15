@@ -156,8 +156,8 @@ function saveLessonPlan() {
 	var lpDateCreated;
 	var lpSubject;
 	var lpDescription;
-
-	var lpLessons;
+	var lpDifficulty;
+	var lpLessonIDs;
 }/**/
 
 function createLessonPlan() {
