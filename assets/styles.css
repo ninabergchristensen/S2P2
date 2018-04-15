@@ -507,31 +507,88 @@ dropdown
 }
 
 /*-------------------------
-Support, feed, web and badges
+Helpdesk, feed, web and badges
  ------------------------*/
+.scroll {
+	height: 250px;
+	overflow-x: hidden;
+	border: 2.5px #f2f2f2 solid;
+	padding: 2px;
+	padding-left: 25px;
+}
+
  .webtitle {
 	color: white;
 	text-align: center;
 }
 
- .articleimgSupport {
+ .articleimgLb {
  	min-height: 300px;
- 	background-image: url('img/LB-webisodes.png');
- 	opacity: 0.85;
+ 	background-image: url('img/episode1.png');
  	background-size: cover;
- 	-webkit-transition: opacity 0.1s;
  	border-radius: 4px;
- 	margin-bottom: 25px;
+ 	margin-bottom: 95px;
+	height: 90%;
+	margin-top: 10px;
+	padding: 15px;
+ }
+
+ .articleimgEc {
+	 min-height: 300px;
+	 background-image: url('img/episode2.png');
+	 background-size: cover;
+	 border-radius: 4px;
+	 margin-bottom: 95px;
+ height: 90%;
+ margin-top: 10px;
+ padding: 15px;
+ }
+
+ .articleimgRt {
+	 min-height: 300px;
+	 background-image: url('img/episode3.png');
+	 background-size: cover;
+	 border-radius: 4px;
+	 margin-bottom: 95px;
+ height: 90%;
+ margin-top: 10px;
+ padding: 15px;
+ }
+
+ .articleimgLp {
+  min-height: 400px;
+  background-image: url('img/lessonbuilder.png');
+  opacity: 0.85;
+  background-size: cover;
+  -webkit-transition: opacity 0.1s;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  bottom: 0;
  }
 
  .articleimgWeb {
- 	min-height: 600px;
- 	background-image: url('img/LB-webisodes.png');
+ 	min-height: 400px;
+ 	background-image: url('img/reviewtool.png');
  	opacity: 0.85;
  	background-size: cover;
  	-webkit-transition: opacity 0.1s;
  	border-radius: 4px;
- 	margin-bottom: 25px;
+ 	margin-bottom: 15px;
+	margin-right: 30px;
+	bottom: 0;
+ }
+
+ .articleimgEvent {
+ 	min-height: 400px;
+ 	background-image: url('img/eventcreator.png');
+ 	opacity: 0.85;
+ 	background-size: cover;
+ 	-webkit-transition: opacity 0.1s;
+ 	border-radius: 4px;
+ 	margin-bottom: 15px;
+	margin-right: 30px;
+	bottom: 0;
  }
 
  .articleimgSupport:hover {
