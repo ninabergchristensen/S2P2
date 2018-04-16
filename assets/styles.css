@@ -513,6 +513,65 @@ dropdown
 	opacity: 1;
 }
 
+/* NEWS DASHBOAD STYLES */
+.articleimgNews {
+	min-height: 200px;
+	background-image: url('img/class-set.jpg');
+	opacity: 0.85;
+	background-size: cover;
+	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.articleimgNews:hover {
+	opacity: 1;
+}
+
+.articleimgNews1 {
+	min-height: 200px;
+	background-image: url('img/KUBO-robot-head-01.jpg');
+	opacity: 0.85;
+	background-size: cover;
+	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.articleimgNews1:hover {
+	opacity: 1;
+}
+
+.articleimgNews2 {
+	min-height: 200px;
+	background-image: url('img/Coding-boxKUBO.jpg');
+	opacity: 0.85;
+	background-size: cover;
+	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.articleimgNews2:hover {
+	opacity: 1;
+}
+
+.articleimgNews3 {
+	min-height: 200px;
+	background-image: url('img/Bodyeaning-head.jpg');
+	opacity: 0.85;
+	background-size: cover;
+	-webkit-transition: opacity 0.1s;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.articleimgNews3:hover {
+	opacity: 1;
+}
+
+/* NEWS DASHBOAD STYLES END */
+
 .articleimgLessonPlans {
 	min-height: 200px;
 	background-image: url('img/tagtilepile2.jpg');
@@ -615,7 +674,7 @@ Helpdesk, feed, web and badges
 
  .articleimgWeb {
  	min-height: 400px;
- 	background-image: url('img/reviewtool.png');
+ 	background-image: url('img/blogtool.png');
  	opacity: 0.85;
  	background-size: cover;
  	-webkit-transition: opacity 0.1s;
