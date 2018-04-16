@@ -158,7 +158,7 @@ function createLessonPlan() {
 		LessonPlanArray = JSON.parse(LessonPlanString);
 		nextID = LessonPlanArray.length;
 	}
-	var newLessonPlan = [nextID, "Untitled", "", "", "", []];
+	var newLessonPlan = [nextID, "Untitled", "0", "0", "", []];
 	LessonPlanArray.push(newLessonPlan);
 	var LessonPlanArrayString = JSON.stringify(LessonPlanArray);
 	localStorage.setItem('LessonPlan',LessonPlanArrayString);
@@ -184,7 +184,7 @@ function showLessonPlans() {
 		console.log("lessonplanarray: "+LessonPlanArray);
 		for(var i=0;i<LessonPlanArray.length;i++) {
 
-			LessonPlanList +=  '<div class="lessonplanlistitem"><h3> ' + LessonPlanArray[i][1] + '</h3> &ndash; ' + LessonPlanArray[i][0] + ' <div class="floatrightbox"><a href="#" class="ctaButtonLink widebutton" onclick="setCurrentLessonPlan('+LessonPlanArray[i][0] +')">Edit</a><a href="#" class="redButtonLink" onclick="'+LessonPlanArray[i][0] +'">Delete</a></div></div>';
+			LessonPlanList +=  '<div class="lessonplanlistitem flexcontainer"><div><img class="mylessonplanimg" src="assets/img/lessonplanimg2.jpg" alt="Lesson Image"></div><div><h3> ' + LessonPlanArray[i][1] + '</h3><p>Subject: ' + LessonPlanArray[i][2] + '</p><p>Difficulty: ' + LessonPlanArray[i][3] + '</div><div><a href="lessonplanbuilder.html" class="ctaButtonLink widebutton" onclick="setCurrentLessonPlan('+LessonPlanArray[i][0] +')">Edit</a><a href="" class="redButtonLink" onclick="'+LessonPlanArray[i][0] +'">Delete</a></div></div>';
 		}
 	} else {
 		LessonPlanList = "You have no custom Lesson Plans.";
@@ -203,10 +203,10 @@ function editLessonPlan() {
 	//console.log(LessonPlanArray);
 	//console.log(LessonPlanArray[currentLessonPlanID-1]);
 
-	var currentTitle = LessonPlanArray[currentLessonPlanID-1][1];
+	var currentTitle = LessonPlanArray[currentLessonPlanID][1];
 	document.getElementById("lpTitle").innerHTML = currentTitle;
 
-	var currentSubject = LessonPlanArray[currentLessonPlanID-1][2];
+	var currentSubject = LessonPlanArray[currentLessonPlanID][2];
 	switch (currentSubject) {
 		case "":
 			document.getElementById("lpSubjectSelector").selectedIndex = 0;
@@ -227,7 +227,7 @@ function editLessonPlan() {
 			break;
 	}
 
-	var currentDiff = LessonPlanArray[currentLessonPlanID-1][3];
+	var currentDiff = LessonPlanArray[currentLessonPlanID][3];
 		switch (currentDiff) {
 		case "":
 			document.getElementById("lpDifficultySelector").selectedIndex = 0;
@@ -246,11 +246,11 @@ function editLessonPlan() {
 			break;
 	}
 
-	var currentDesc = LessonPlanArray[currentLessonPlanID-1][4];
+	var currentDesc = LessonPlanArray[currentLessonPlanID][4];
 	document.getElementById("lpDescriptionBox").innerHTML = currentDesc;
 
 	var currentLessons = [];
-	currentLessons = LessonPlanArray[currentLessonPlanID-1][5];
+	currentLessons = LessonPlanArray[currentLessonPlanID][5];
 	//console.log(currentTitle+", "+currentSubject+", "+currentDiff+", "+currentDesc+", "+currentLessons);
 }
 
@@ -295,12 +295,20 @@ function saveLessonPlan() {
 	//console.log(changedTitle);
 
 	// Send opdaterede data til localstorage:
-	var updates;
-	updates = [currentLessonPlanID, changedTitle,changedSubject,changedDiff,changedDesc,changedLessons];
-	console.log(currentLessonPlanID);
-	var updatesArray = [];
-	updatesArray[currentLessonPlanIDString] = updates;
+	var getLessonPlanString = localStorage.getItem('LessonPlan');
+	var getLessonPlan = JSON.parse(getLessonPlanString);
 
-	var updatesString = JSON.stringify(updatesArray);
-	localStorage.setItem('LessonPlan',updatesString);
+	for (var i=0;i<getLessonPlan.length;i++) {
+		if (getLessonPlan[i][0] == currentLessonPlanID) {
+			getLessonPlan[i] = [currentLessonPlanID, changedTitle,changedSubject,changedDiff,changedDesc,changedLessons];
+			console.log(getLessonPlan[i]);
+			var LessonPlanArrayString = JSON.stringify(getLessonPlan);
+			localStorage.setItem('LessonPlan',LessonPlanArrayString);
+			break;
+		}
+	}
+}
+
+function deleteLessonPlan() {
+
 }
