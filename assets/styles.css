@@ -195,13 +195,17 @@ section>div {
  ------------------------*/
 
 .ctaButtonLink, .blueButtonLink, .redButtonLink {
-	display: block;
+	line-height: 50px;
 	padding: 10px 15px;
 	min-width: 100px;
 	color: #fff;
 	border-radius: 4px;
 	margin: 25px 15px 15px 0px;
 	text-align: center;
+}
+
+* .ctaButtonLink:last-child, .blueButtonLink:last-child, .redButtonLink:last-child {
+	margin-right: 0px;
 }
 
 .ctaButtonLink {
@@ -227,6 +231,10 @@ section>div {
 
 .redButtonLink:hover {
 	background: #fb8c3e;
+}
+
+.widebutton {
+	padding: 10px 60px;
 }
 
 /*-------------------------
@@ -1116,8 +1124,10 @@ form {
  Lesson Plan Builder
  ------------------------*/
 
-#myLPListHolder div {
+.lessonplanlistitem {
 	padding: 15px;
+	margin-bottom: 15px;
+	background: #268dbd;
 }
 
 #lessonlistcontainer {
