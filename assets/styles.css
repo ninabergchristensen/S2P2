@@ -474,6 +474,8 @@ dropdown
 
 .twocolumnflexbox {
 	flex-grow: 6 !important;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .flexfromright {
@@ -1146,10 +1148,8 @@ form {
  My School styles
  ------------------------*/
 .schoolnameHeader {
-	font-family: 'Cabin Sketch';
-	font-size: 30px;
-	text-align: center;
-	color: #268dbd;
+	font-size: 20px;
+	color: LightGray;
 }
 
 .latestpostHeader {
@@ -1161,6 +1161,8 @@ form {
 .flex-container {
   display: flex;
   flex-direction: row;
+	padding-right: 25px;
+	margin: auto;
 
 }
 
