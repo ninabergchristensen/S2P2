@@ -44,7 +44,7 @@
 				<section>
 					<div>
 						<p>Build Lesson Plan:</p> 
-						<h1 onclick="renameLP" id="lpTitle">Untitled</h1>
+						<h1 onclick="renameLP()" id="lpTitle"></h1>
 					</div>
 				</section>
 				<section>
@@ -55,17 +55,17 @@
 							<div>
 								<h3>Subject</h3>
 								<select id="lpSubjectSelector">
-									<option>Coding</option>
-									<option>Math</option>
-									<option>Language/spelling</option>
-									<option>Just for fun</option>
+									<option value="0">Coding</option>
+									<option value="1">Math</option>
+									<option value="2">Language/spelling</option>
+									<option value="3">Just for fun</option>
 								</select>
 								<h3>Difficulty</h3>
 								<select id="lpDifficultySelector">
-									<option>Beginner (approx. age 4 – 5)</option>
-									<option>Novice (approx. age 5 – 7)</option>
-									<option>Intermediate (approx. age 6 - 8)</option>
-									<option>Advanced (approx. age 8 – 10)</option>
+									<option value="0">Beginner (approx. age 4 – 5)</option>
+									<option value="1">Novice (approx. age 5 – 7)</option>
+									<option value="2">Intermediate (approx. age 6 - 8)</option>
+									<option value="3">Advanced (approx. age 8 – 10)</option>
 								</select>
 							</div>
 							<div>
@@ -99,7 +99,6 @@
 						</div>
 					</div>
 					<div class="flexcontainer flexfromright">
-						<a href="mylessonplans.html" class="redButtonLink">Don't save</a>
 						<a href="#" class="blueButtonLink">Save</a>
 						<a href="mylessonplans.html" class="blueButtonLink" onclick="saveLP()">Save and return to My Lesson Plans</a>
 					</div>
@@ -107,7 +106,7 @@
 			</div>
 		</main>
 		<script src="assets/script.js"></script>
-		<script>loadLP();</script>
+		<script>editLessonPlan();</script>
 	</body>
 
 </html>
