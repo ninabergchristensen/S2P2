@@ -152,7 +152,7 @@ function clearInfobox(event) {
 
 //localStorage.clear();
 
-function createLP() {
+function createLessonPlan() {
 	var createdDate = new Date();
 	createdDate = createdDate.getDate() + '/' + (createdDate.getMonth()+1) + '/' + createdDate.getFullYear();
 	var LessonPlanString = localStorage.getItem("LessonPlan");
@@ -185,4 +185,8 @@ function showLessonPlans() {
 	}
 	console.log(LessonPlanList);
 	document.getElementById("myLPListholder").innerHTML = LessonPlanList;
+}
+
+function editLessonPlan() {
+	
 }
