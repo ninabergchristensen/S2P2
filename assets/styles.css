@@ -509,57 +509,61 @@ dropdown
 .articleimgNews {
 	min-height: 200px;
 	background-image: url('img/class-set.jpg');
-	opacity: 0.85;
+	transition: 0.3s;
 	background-size: cover;
-	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
 
 .articleimgNews:hover {
-	opacity: 1;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.05);
+	z-index: 5;
 }
 
 .articleimgNews1 {
 	min-height: 200px;
 	background-image: url('img/KUBO-robot-head-01.jpg');
-	opacity: 0.85;
+	transition: 0.3s;
 	background-size: cover;
-	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
 
 .articleimgNews1:hover {
-	opacity: 1;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.05);
+	z-index: 5;
 }
 
 .articleimgNews2 {
 	min-height: 200px;
 	background-image: url('img/Coding-boxKUBO.jpg');
-	opacity: 0.85;
+	transition: 0.3s;
 	background-size: cover;
-	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
 
 .articleimgNews2:hover {
-	opacity: 1;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.05);
+	z-index: 5;
 }
 
 .articleimgNews3 {
 	min-height: 200px;
 	background-image: url('img/Bodyeaning-head.jpg');
-	opacity: 0.85;
+	transition: 0.3s;
 	background-size: cover;
-	-webkit-transition: opacity 0.1s;
 	border-radius: 4px;
 	margin-bottom: 10px;
 }
 
 .articleimgNews3:hover {
-	opacity: 1;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.05);
+	z-index: 5;
 }
 
 /* NEWS DASHBOAD STYLES END */
@@ -722,10 +726,10 @@ Helpdesk, feed, web and badges
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
 		width: 100%;
-		opacity: 0.8;
 		padding: 5px;
 		margin-bottom: 20px;
 		margin-top: 20px;
+		z-index: -22;
 }
 
 .userevent:hover {
