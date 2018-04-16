@@ -173,6 +173,14 @@ section>div {
 	padding-top: 10px;
 }
 
+.palebluebox-profile {
+	display: flex;
+	background: #e1eff4;
+	min-height: 150px;
+	padding: 20px;
+	flex-direction: row;
+}
+
 .paleblueboxDashboard {
 	background: #e1eff4;
 	margin-top: 0;
@@ -771,32 +779,6 @@ Helpdesk, feed, web and badges
     cursor: pointer;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#badgeholder {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-content: flex-start;
-	max-width: 100%;
-	background: #e1eff4;
-	border-radius: 4px;
-	/*margin: 0px -15px;
-	padding: 15px;*/
-}
-
-#badgeholder>img{
-	width: 75px;
-	flex-grow: 0;
-	margin: 15px;
-}
-
-#badgeholder>img.incomplete-badge {
-	opacity: 0.5;
-}
-
-#badgeholder>img.complete-badge {
-	opacity: 1;
 }
 
 /* The actual popup (appears on top) */
