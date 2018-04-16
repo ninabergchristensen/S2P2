@@ -195,7 +195,7 @@ section>div {
  ------------------------*/
 
 .ctaButtonLink, .blueButtonLink, .redButtonLink {
-	line-height: 50px;
+	line-height: 30px;
 	padding: 10px 15px;
 	min-width: 100px;
 	color: #fff;
@@ -1081,7 +1081,7 @@ News
 	color: #000;
 }
 .blogpopup .close:hover {
-	color: #f1f1;
+	color: #f1f1f1;
 }
 .blogpopup .content {
 	max-height: 30%;
