@@ -38,6 +38,12 @@
 										</div>
 								</div>
 		</nav>
+		<header>
+			<div>
+				<h1>Lesson Plan Builder</h1>
+				<p>Create and edit your own custom Lesson Plans with the Lesson Plan Builder.</p>
+			</div>
+		</header>
 		<main>
 <!-- 		Page content 		-->
 			<div>
@@ -46,8 +52,6 @@
 						<p>Build Lesson Plan:</p> 
 						<h1 onclick="renameLP()" id="lpTitle"></h1>
 					</div>
-				</section>
-				<section>
 					<div>
 						<h2>Settings</h2>
 						<p>Change the main settings of the Lesson Plan.</p>
@@ -99,7 +103,7 @@
 						</div>
 					</div>
 					<div class="flexcontainer flexfromright">
-						<a href="#" class="blueButtonLink">Save</a>
+						<a href="#" onclick="saveLessonPlan()" class="blueButtonLink">Save</a>
 						<a href="mylessonplans.html" class="blueButtonLink" onclick="saveLP()">Save and return to My Lesson Plans</a>
 					</div>
 				</section>
