@@ -124,9 +124,6 @@
 					</div>
 					<div class="flexcontainer">
 						<div>
-							<h3>Forms</h3>
-						</div>
-						<div>
 							<h3>Top navigation</h3>
 							<nav id="styleguideExample">
 								<ul>
@@ -143,7 +140,353 @@
 			<section id="layouts">
 				<div class="palebluebox">
 					<h2>Layouts</h2>
-					<p></p>
+					<div class="flexcontainer">
+					<div>
+						<h4>News Container</h4>
+						<a href="https://kubo-robot.com/kubo-comes-to-the-us/" target="_blank">
+						<div class="articleimgNews">
+											<div class="articleimgHeader">
+												<img src="assets/img/tag_news.png" alt="News"><p>KUBO comes to the US</p>
+											</div>
+						</div>
+						</a>
+					</div>
+
+					<div>
+						<h4>Event Container</h4>
+						<a href="https://kubo-robot.com/come-and-see-us-at-bett/" target="_blank">
+							<div class="event">
+								<img src="assets/img/environmental2.jpg" alt="event" style="width:100%">
+									<div class="eventcontainer">
+										<p>January 24, 2018</p>
+										<h3 style="color:white">Come see us at Bett!</h3>
+									</div>
+							</div>
+						</a>
+					</div>
+
+					<div>
+						<h4>Blog Container</h4>
+						<div>
+							<div class="blog">
+								<div class="blogpost">
+									<div class="card">
+										<h4 class="blogtitle">Title description, Sep 2, 2017</h4>
+										<h3>LATEST BLOGPOST</h3>
+										<p>Some text..</p>
+										<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+
+<!--- THE BUTTON FOR POPUP -->
+												<div class="box">
+													<div class="box">
+														<button class="blueButtonLink"><a href="#popup1" style="color:white">Read more</a></button>
+													</div>
+												</div>
+<!--- THE BUTTON FOR POPUP -->
+
+														<!--- THIS TEXT IS NOT VISIBLE TO THE USER -->
+														<div id="popup1" class="overlay">
+															<div class="blogpopup">
+																<h4 class="blogtitle">Title description, Sep 2, 2017</h4>
+																<h3>LATEST BLOGPOST</h3>
+																	<a class="close" href="#">&times;</a>
+																<div class="content">
+																	<p>Some text..</p>
+																	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+																	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+																	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+																	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+																	<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+																	<p>Some text..</p>
+																	<img src="assets/img/profiletag.png" alt="User that posted">
+																	<a href="profile.html"><button class="blueButtonLink">Visit pofile</button></a>
+
+																</div>
+															</div>
+														</div>
+												 <!--- THIS TEXT IS NOT VISIBLE TO THE USER -->
+
+												 <h4>COMMENT HERE:</h4>
+										<form style="background-color:#226390">
+												<textarea name="comments" id="words" rows="10" cols="25">Enter comment</textarea>
+												<button type="button" name="button" value="Enter" onclick="getwords()" class="blueButtonLink">Enter</button><br>
+												<p id="para" class="para"></p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<div>
+	<h3>Badges</h3>
+</div>
+
+				</div>
+				<div class="flexcontainer">
+					<div class="badges">
+					<ul>
+						<li>
+							<div class="flexcontainer">
+
+								<div>
+								 <div>
+									 <div>
+										 <h3 class="badgeHead">Complete Profile</h3>
+											 <div class="popup" onclick="myFunction()">
+												 <img src="assets/img/badge/completeProfile.png" style="width:35%" alt="Complete profile badge" class="badgeImg">
+												</div>
+									 		</div>
+								 </div>
+							 </div>
+
+								<div>
+									<div>
+										<div>
+											<h3 class="badgeHead">First comment</h3>
+											<div class="popup" onclick="myFunction()">
+													<img src="assets/img/badge/firstComment.png" style="width:35%" alt="First Comment badge" class="badgeImg">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div>
+										<div>
+											<h3 class="badgeHead">10 comments</h3>
+											<div class="popup" onclick="myFunction()">
+											<img src="assets/img/badge/10comments.png" style="width:35%" alt="10 comments badge" class="badgeImg">
+													<span class="popuptext" id="myPopup">Lorem ipsum dolor sit amet</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</li>
+					</ul>
+			<!-- ektr -->
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
+						<div>
+						 <div>
+							 <div>
+								 <h3 class="badgeHead">Like LessonPlan</h3>
+									 <div class="popup" onclick="myFunction()">
+										 <img src="assets/img/badge/likeLessonPlan.png" style="width:35%" alt="Like LessonPlan badge" class="badgeImg">
+										</div>
+									</div>
+						 </div>
+					 </div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Create LessonPlan</h3>
+									<div class="popup" onclick="myFunction()">
+											<img src="assets/img/badge/createLessonPlan.png" style="width:35%" alt="Create LessonPlan badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Review LessonPlan</h3>
+									<div class="popup" onclick="myFunction()">
+									<img src="assets/img/badge/reviewLessonPlan.png" style="width:35%" alt="Review LessonPlan badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
+						<div>
+						 <div>
+							 <div>
+								 <h3 class="badgeHead">Complete LessonPlan</h3>
+									 <div class="popup" onclick="myFunction()">
+										 <img src="assets/img/badge/completeLessonPlan.png" style="width:35%" alt="Complete LessonPlan badge" class="badgeImg">
+										</div>
+									</div>
+						 </div>
+					 </div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Attend Event</h3>
+									<div class="popup" onclick="myFunction()">
+											<img src="assets/img/badge/attendEvent.png" style="width:35%" alt="Attend Event badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Create Event</h3>
+									<div class="popup" onclick="myFunction()">
+									<img src="assets/img/badge/createEvent.png" style="width:35%" alt="createEvent badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
+						<div>
+						 <div>
+							 <div>
+								 <h3 class="badgeHead">Gain Follower</h3>
+									 <div class="popup" onclick="myFunction()">
+										 <img src="assets/img/badge/gainFollower.png" style="width:35%" alt="Gain Follower badge" class="badgeImg">
+										</div>
+									</div>
+						 </div>
+					 </div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Gain 10 Followers</h3>
+									<div class="popup" onclick="myFunction()">
+											<img src="assets/img/badge/gain10Followers.png" style="width:35%" alt="Gain 10 Followers badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Gain 100 Followers</h3>
+									<div class="popup" onclick="myFunction()">
+									<img src="assets/img/badge/gain100Followers.png" style="width:35%" alt="Gain 100 Followers badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
+						<div>
+						 <div>
+							 <div>
+								 <h3 class="badgeHead">Follow User</h3>
+									 <div class="popup" onclick="myFunction()">
+										 <img src="assets/img/badge/followUser.png" style="width:35%" alt="Follow User badge" class="badgeImg">
+										</div>
+									</div>
+						 </div>
+					 </div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Follow 10 Users</h3>
+									<div class="popup" onclick="myFunction()">
+											<img src="assets/img/badge/follow10Users.png" style="width:35%" alt="Follow 10 Users badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Follow 100 Users</h3>
+									<div class="popup" onclick="myFunction()">
+									<img src="assets/img/badge/follow100Users.png" style="width:35%" alt="Follow 100 Users badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
+						<div>
+						 <div>
+							 <div>
+								 <h3 class="badgeHead">Score 10 KEDU Points</h3>
+									 <div class="popup" onclick="myFunction()">
+										 <img src="assets/img/badge/score10kedupoints.png" style="width:35%" alt="Score 10 KEDU Points badge" class="badgeImg">
+										</div>
+									</div>
+						 </div>
+					 </div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Score 100 KEDU Points</h3>
+									<div class="popup" onclick="myFunction()">
+											<img src="assets/img/badge/score100kedupoints.png" style="width:35%" alt="Score 100 KEDU Points badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<div>
+									<h3 class="badgeHead">Score 1000 KEDU Points</h3>
+									<div class="popup" onclick="myFunction()">
+									<img src="assets/img/badge/score1000kedupoints.png" style="width:35%" alt="Score 1000 KEDU Points badge" class="badgeImg">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="flexcontainer">
+
+						<div>
+						 <div>
+							 <div>
+								 <h3 class="badgeHead">Score 10000 KEDU Points</h3>
+									 <div class="popup" onclick="myFunction()">
+										 <img src="assets/img/badge/score10000kedupoints.png" style="width:12%" alt="Score 10000 KEDU Points badge" class="badgeImg">
+										</div>
+									</div>
+						 </div>
+					 </div>
+
+					</div>
+				</li>
+			</ul>
+
+				</div>
 				</div>
 			</section>
 
