@@ -5,20 +5,6 @@
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Lato:400,700" rel="stylesheet">
-
-    <script language="JavaScript">
-
-    var TestVar =  document.getElementById("email").value;
-    function testResults (form) {
-        TestVar =  (form.email.value)
-        if (TestVar == "john@doe.com") {
-            (window.confirm("We have sent you an email with a temporary password, have a nice day John! Return to login?"))
-          window.location.href = "login.html";
-          } else
-            (window.confirm("You don't have a KEDU user, but we would love to have you! Would you like to create one?"))
-        window.location.href = "createuser.html";
-    }
-    </script>
 	</head>
 
 	<body>
@@ -42,7 +28,7 @@
   <div class="container">
     <form>
       <div class="login">
-        <input type="text" placeholder="john@doe.com" name="email" id="email" class="email"><br>
+        <input type="text" placeholder="john@doe.com" name="email" id="email" class="email" value="john@doe.com"><br>
         <button type="button" onclick="check(this.form)" value="Login" class="loginBtn">Submit</button><br>
         <p class="psw">Back to <a href="login.html">login</a></p>
       </div>
